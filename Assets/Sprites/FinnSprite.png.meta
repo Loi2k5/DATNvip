@@ -847,7 +847,36 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FinnSprite_0: -1734298994132575547
+      FinnSprite_1: 534103480558367943
+      FinnSprite_10: 5129986769101347299
+      FinnSprite_11: -4297940849446047935
+      FinnSprite_12: -8141434122734646331
+      FinnSprite_13: 1204210455163068522
+      FinnSprite_14: -5917656646185412387
+      FinnSprite_15: 937906620074655101
+      FinnSprite_16: 254875081501157263
+      FinnSprite_17: -2985760414292740195
+      FinnSprite_18: 9118139505556205406
+      FinnSprite_19: 1719766046186690200
+      FinnSprite_2: 4791322243934442081
+      FinnSprite_20: -4670821527491860930
+      FinnSprite_21: 8482636589037880538
+      FinnSprite_22: -2502752336538848153
+      FinnSprite_23: 3520439725064392175
+      FinnSprite_24: -27727559027392305
+      FinnSprite_25: 8629116929241908266
+      FinnSprite_26: 5150754172416867010
+      FinnSprite_27: 364163565158551442
+      FinnSprite_28: -8144951618997409560
+      FinnSprite_3: -5917062122192708893
+      FinnSprite_4: -6251104414078383469
+      FinnSprite_5: 724075359462870046
+      FinnSprite_6: -4552544995289275632
+      FinnSprite_7: 8097478649174806226
+      FinnSprite_8: 2133774607616596006
+      FinnSprite_9: 1374902956545355056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

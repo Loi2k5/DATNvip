@@ -922,7 +922,39 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BasicEnemy_0: 1702279688969781617
+      BasicEnemy_1: -1167993931104646600
+      BasicEnemy_10: -9183463824781133986
+      BasicEnemy_11: 4549374140943477294
+      BasicEnemy_12: -6196467678812277991
+      BasicEnemy_13: -1763281066541260118
+      BasicEnemy_14: 2834221244122039842
+      BasicEnemy_15: 18679316676329216
+      BasicEnemy_16: 2188379911037229855
+      BasicEnemy_17: 677971326353926705
+      BasicEnemy_18: -1763212260471175701
+      BasicEnemy_19: 7048988210809846909
+      BasicEnemy_2: 8770043384459367301
+      BasicEnemy_20: -3768878567256592989
+      BasicEnemy_21: -6276318774191816623
+      BasicEnemy_22: 48279065201688058
+      BasicEnemy_23: -4539733375991859438
+      BasicEnemy_24: 4396480639198504591
+      BasicEnemy_25: -1910980454354314396
+      BasicEnemy_26: 6113413092018633807
+      BasicEnemy_27: 2113997523284431892
+      BasicEnemy_28: 995126347035663826
+      BasicEnemy_29: -1631352773400745491
+      BasicEnemy_3: -8272243146081703319
+      BasicEnemy_30: 8912956695234546824
+      BasicEnemy_31: -8855395963472152560
+      BasicEnemy_4: 5225461376936292303
+      BasicEnemy_5: -2395097988536658720
+      BasicEnemy_6: 5184698942475860234
+      BasicEnemy_7: -318518494911713862
+      BasicEnemy_8: -771995885138110305
+      BasicEnemy_9: -7379447960039204425
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

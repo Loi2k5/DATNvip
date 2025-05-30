@@ -722,7 +722,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EnergyEnemy_0: 6779542824716074411
+      EnergyEnemy_1: -3907143179821982689
+      EnergyEnemy_10: -8859693139128223003
+      EnergyEnemy_11: -5133865309330188176
+      EnergyEnemy_12: -823249881033339948
+      EnergyEnemy_13: -6396446401424273968
+      EnergyEnemy_14: 2939235235933983202
+      EnergyEnemy_15: -6131009803305123458
+      EnergyEnemy_16: 6195647215688432557
+      EnergyEnemy_17: -6826881425929396866
+      EnergyEnemy_18: 4332790961501876067
+      EnergyEnemy_19: -3822325335822107038
+      EnergyEnemy_2: 3453447221161161779
+      EnergyEnemy_20: 70735673406500937
+      EnergyEnemy_21: 5789971510411810190
+      EnergyEnemy_22: -1725989833213645809
+      EnergyEnemy_23: 6211307563016012380
+      EnergyEnemy_3: 1075859235031558197
+      EnergyEnemy_4: -7612670963183259508
+      EnergyEnemy_5: -5589624180177768581
+      EnergyEnemy_6: -6057945539517514184
+      EnergyEnemy_7: 4651171834084388051
+      EnergyEnemy_8: -811604046977000031
+      EnergyEnemy_9: 639000170350937265
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

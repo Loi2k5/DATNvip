@@ -1,29 +1,34 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    [Header("Movement Settings")]
-    [SerializeField] private float moveSpeed = 5f;
-
+    public float moveSpeed = 5f;
     private Rigidbody2D rb;
-    private Vector2 inputDirection;
+    private Vector2 moveInput;
 
-    private void Awake()
+    // 🔧 Thêm dòng này để liên kết tới script súng
+    public WeaponRotation weaponRotation;
+
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Update()
+    void Update()
     {
-        // Nhận input từ bàn phím
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-        inputDirection = new Vector2(moveX, moveY).normalized;
+        moveInput.x = Input.GetAxisRaw("Horizontal");
+        moveInput.y = Input.GetAxisRaw("Vertical");
+        moveInput.Normalize();
+
+        // 🔄 Cập nhật hướng di chuyển cho script của súng
+        if (weaponRotation != null)
+        {
+            weaponRotation.moveDirection = moveInput;
+        }
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
-        rb.linearVelocity = inputDirection * moveSpeed;
+        rb.linearVelocity = moveInput * moveSpeed;
     }
 }

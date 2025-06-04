@@ -106,7 +106,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -120,7 +120,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -185,10 +185,10 @@ TextureImporter:
       name: EnergyEnemy_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 211
-        width: 29
-        height: 22
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,10 +207,10 @@ TextureImporter:
       name: EnergyEnemy_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 211
-        width: 29
-        height: 24
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,10 +229,10 @@ TextureImporter:
       name: EnergyEnemy_2
       rect:
         serializedVersion: 2
-        x: 145
-        y: 211
-        width: 29
-        height: 23
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,10 +251,10 @@ TextureImporter:
       name: EnergyEnemy_3
       rect:
         serializedVersion: 2
-        x: 210
-        y: 211
-        width: 29
-        height: 22
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,10 +273,10 @@ TextureImporter:
       name: EnergyEnemy_4
       rect:
         serializedVersion: 2
-        x: 274
-        y: 211
-        width: 29
-        height: 24
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,10 +295,10 @@ TextureImporter:
       name: EnergyEnemy_5
       rect:
         serializedVersion: 2
-        x: 338
-        y: 211
-        width: 29
-        height: 23
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,10 +317,10 @@ TextureImporter:
       name: EnergyEnemy_6
       rect:
         serializedVersion: 2
-        x: 17
-        y: 147
-        width: 29
-        height: 22
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,10 +339,10 @@ TextureImporter:
       name: EnergyEnemy_7
       rect:
         serializedVersion: 2
-        x: 81
-        y: 147
-        width: 29
-        height: 24
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,10 +361,10 @@ TextureImporter:
       name: EnergyEnemy_8
       rect:
         serializedVersion: 2
-        x: 145
-        y: 147
-        width: 29
-        height: 23
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: EnergyEnemy_9
       rect:
         serializedVersion: 2
-        x: 210
-        y: 147
-        width: 29
-        height: 22
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,10 +405,10 @@ TextureImporter:
       name: EnergyEnemy_10
       rect:
         serializedVersion: 2
-        x: 274
-        y: 147
-        width: 29
-        height: 24
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -427,10 +427,10 @@ TextureImporter:
       name: EnergyEnemy_11
       rect:
         serializedVersion: 2
-        x: 338
-        y: 147
-        width: 29
-        height: 23
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +449,10 @@ TextureImporter:
       name: EnergyEnemy_12
       rect:
         serializedVersion: 2
-        x: 23
-        y: 83
-        width: 19
-        height: 22
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -471,10 +471,10 @@ TextureImporter:
       name: EnergyEnemy_13
       rect:
         serializedVersion: 2
-        x: 88
-        y: 83
-        width: 17
-        height: 24
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -493,10 +493,10 @@ TextureImporter:
       name: EnergyEnemy_14
       rect:
         serializedVersion: 2
-        x: 153
-        y: 83
-        width: 18
-        height: 23
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -515,10 +515,10 @@ TextureImporter:
       name: EnergyEnemy_15
       rect:
         serializedVersion: 2
-        x: 215
-        y: 83
-        width: 20
-        height: 22
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -537,10 +537,10 @@ TextureImporter:
       name: EnergyEnemy_16
       rect:
         serializedVersion: 2
-        x: 281
-        y: 83
-        width: 16
-        height: 24
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -559,10 +559,10 @@ TextureImporter:
       name: EnergyEnemy_17
       rect:
         serializedVersion: 2
-        x: 345
-        y: 83
-        width: 19
-        height: 23
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -581,10 +581,10 @@ TextureImporter:
       name: EnergyEnemy_18
       rect:
         serializedVersion: 2
-        x: 21
-        y: 19
-        width: 19
-        height: 22
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -603,10 +603,10 @@ TextureImporter:
       name: EnergyEnemy_19
       rect:
         serializedVersion: 2
-        x: 86
-        y: 19
-        width: 17
-        height: 24
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -625,10 +625,10 @@ TextureImporter:
       name: EnergyEnemy_20
       rect:
         serializedVersion: 2
-        x: 148
-        y: 19
-        width: 18
-        height: 23
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -647,10 +647,10 @@ TextureImporter:
       name: EnergyEnemy_21
       rect:
         serializedVersion: 2
-        x: 212
-        y: 19
-        width: 20
-        height: 22
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -669,10 +669,10 @@ TextureImporter:
       name: EnergyEnemy_22
       rect:
         serializedVersion: 2
-        x: 278
-        y: 19
-        width: 16
-        height: 24
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -691,10 +691,10 @@ TextureImporter:
       name: EnergyEnemy_23
       rect:
         serializedVersion: 2
-        x: 339
-        y: 19
-        width: 19
-        height: 23
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -713,7 +713,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f188be12f6204244888d83817ee5fcba
     internalID: 0
     vertices: []
     indices: 

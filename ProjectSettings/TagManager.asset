@@ -51,6 +51,9 @@ TagManager:
   - name: Rock
     uniqueID: 3469726501
     locked: 0
+  - name: Decor
+    uniqueID: 1632437765
+    locked: 0
   - name: Tree
     uniqueID: 3860828485
     locked: 0

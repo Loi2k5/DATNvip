@@ -5,6 +5,7 @@ public class PlayerBullet : MonoBehaviour
     [SerializeField] private float moveSpeed = 25f;
     [SerializeField] private float timeDestroy = 0.5f;
     [SerializeField] private float damage = 10f;
+    [SerializeField] GameObject bloodPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +29,8 @@ public class PlayerBullet : MonoBehaviour
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);
-                
+                GameObject blood = Instantiate(bloodPrefab, transform.position, Quaternion.identity);
+                Destroy(blood, 1f);
             }
             Destroy(gameObject);
         }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8079164487343857584}
   - component: {fileID: 6763025052724995321}
   - component: {fileID: 1553389241558833942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MiniBoss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab22db1957cd1f4295ec7f5482d9ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMoveSpeed: 1
+  enemyMoveSpeed: 5
   maxHp: 50
   hpBar: {fileID: 2382697141373604698}
   enterDamage: 10
@@ -227,6 +227,10 @@ PrefabInstance:
     - target: {fileID: 2372872507175401297, guid: 7d415e962b1540b429f2b3b8e173e2bd, type: 3}
       propertyPath: m_Name
       value: HpBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 2372872507175401297, guid: 7d415e962b1540b429f2b3b8e173e2bd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3315953015353378915, guid: 7d415e962b1540b429f2b3b8e173e2bd, type: 3}
       propertyPath: m_Pivot.x
@@ -307,6 +311,14 @@ PrefabInstance:
     - target: {fileID: 3315953015353378915, guid: 7d415e962b1540b429f2b3b8e173e2bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026125856241547791, guid: 7d415e962b1540b429f2b3b8e173e2bd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972558961194807880, guid: 7d415e962b1540b429f2b3b8e173e2bd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

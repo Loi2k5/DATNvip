@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2519610681053970952}
   - component: {fileID: 8632894043850057979}
   - component: {fileID: 5336226760931040892}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HealEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -229,6 +229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HpBar
       objectReference: {fileID: 0}
+    - target: {fileID: 2372872507175401297, guid: 7d415e962b1540b429f2b3b8e173e2bd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3315953015353378915, guid: 7d415e962b1540b429f2b3b8e173e2bd, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -308,6 +312,14 @@ PrefabInstance:
     - target: {fileID: 3315953015353378915, guid: 7d415e962b1540b429f2b3b8e173e2bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5026125856241547791, guid: 7d415e962b1540b429f2b3b8e173e2bd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7972558961194807880, guid: 7d415e962b1540b429f2b3b8e173e2bd, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

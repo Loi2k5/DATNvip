@@ -1,78 +1,144 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
 public class Gun : MonoBehaviour
 {
     private float rotateOffset = 180f;
+
     [SerializeField] private Transform firePos;
     [SerializeField] private GameObject bulletPrefabs;
     [SerializeField] private float shotDelay = 0.15f;
     private float nextShot;
+
     [SerializeField] private int maxAmmo = 24;
     public int currentAmmo;
-    [SerializeField] private TextMeshProUGUI armoText;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    [SerializeField] private TextMeshProUGUI ammoText;
+
+    [SerializeField] private float reloadDelay = 1.5f;
+    private bool isReloading = false;
+    private float reloadTimer;
+
+    [SerializeField] private float detectionRange = 10f;
+    [SerializeField] private LayerMask enemyLayer; // Set LayerMask to only detect Enemy
+
     void Start()
     {
         currentAmmo = maxAmmo;
-        UpdateArmoText();
+        UpdateAmmoText();
     }
 
-    // Update is called once per frame
     void Update()
     {
         RotateGun();
-        Shoot();
-        Reload();
+        AutoShoot();
+        AutoReload();
     }
+
     void RotateGun()
     {
-        if (Input.mousePosition.x < 0 || Input.mousePosition.x > Screen.width || Input.mousePosition.y < 0 || Input.mousePosition.y > Screen.height)
-        {
+        if (Input.mousePosition.x < 0 || Input.mousePosition.x > Screen.width ||
+            Input.mousePosition.y < 0 || Input.mousePosition.y > Screen.height)
             return;
-        }
-        Vector3 displacement = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        float angle = Mathf.Atan2(displacement.y, displacement.x) * Mathf.Rad2Deg;
+
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 direction = mouseWorldPos - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle + rotateOffset);
-        if (angle < -90 || angle > 90)
-        {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else
-        {
-            transform.localScale = new Vector3(1, -1, 1);
-        }
+
+        Vector3 localScale = transform.localScale;
+        localScale.y = angle < -90 || angle > 90 ? 1 : -1;
+        transform.localScale = localScale;
     }
-    void Shoot()
+
+    void AutoShoot()
     {
-        if (Input.GetMouseButtonDown(0) && currentAmmo > 0 && Time.time > nextShot)
+        if (isReloading) return;
+
+        Transform target = GetNearestEnemy();
+
+        if (Time.time > nextShot && currentAmmo > 0 && target != null)
         {
             nextShot = Time.time + shotDelay;
-            Instantiate(bulletPrefabs, firePos.position, firePos.rotation);
+
+            // Tính hướng đến enemy
+            Vector3 direction = (target.position - transform.position).normalized;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            // Xoay súng theo hướng bắn
+            transform.rotation = Quaternion.Euler(0, 0, angle + rotateOffset);
+
+            // Flip súng theo hướng để không bị ngược (nếu cần)
+            Vector3 localScale = transform.localScale;
+            localScale.y = (angle < -90 || angle > 90) ? 1 : -1;
+            transform.localScale = localScale;
+
+            // Bắn đạn
+            GameObject bullet = Instantiate(bulletPrefabs, firePos.position, Quaternion.Euler(0, 0, angle));
             currentAmmo--;
-            UpdateArmoText();
+            UpdateAmmoText();
+
+            if (currentAmmo <= 0)
+            {
+                StartReload();
+            }
         }
     }
-    void Reload()
+
+
+
+    Transform GetNearestEnemy()
     {
-        if (Input.GetMouseButtonDown(1) && currentAmmo < maxAmmo)
+        Collider2D[] hits = Physics2D.OverlapCircleAll(firePos.position, detectionRange, enemyLayer);
+        Transform nearestEnemy = null;
+        float minDistance = Mathf.Infinity;
+
+        foreach (Collider2D hit in hits)
         {
-            currentAmmo = maxAmmo;
-            UpdateArmoText();
+            if (hit.CompareTag("Enemy"))
+            {
+                float dist = Vector2.Distance(firePos.position, hit.transform.position);
+                if (dist < minDistance)
+                {
+                    minDistance = dist;
+                    nearestEnemy = hit.transform;
+                }
+            }
+        }
+        return nearestEnemy;
+    }
+
+
+    void AutoReload()
+    {
+        if (isReloading)
+        {
+            reloadTimer -= Time.deltaTime;
+            if (reloadTimer <= 0f)
+            {
+                FinishReload();
+            }
         }
     }
-    private void UpdateArmoText()
+
+    void StartReload()
     {
-        if (armoText != null)
+        isReloading = true;
+        reloadTimer = reloadDelay;
+    }
+
+    void FinishReload()
+    {
+        currentAmmo = maxAmmo;
+        isReloading = false;
+        UpdateAmmoText();
+    }
+
+    private void UpdateAmmoText()
+    {
+        if (ammoText != null)
         {
-            if (currentAmmo > 0)
-            {
-                armoText.text = currentAmmo.ToString();
-            }
-            else
-            {
-                armoText.text = "Empty";
-            }
+            ammoText.text = isReloading ? "Reloading..." : (currentAmmo > 0 ? currentAmmo.ToString() : "Empty");
         }
     }
 }

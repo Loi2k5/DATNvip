@@ -3,7 +3,9 @@ using System.Collections; // Cần thiết cho Coroutine (cho cooldown tấn cô
 
 public class PetMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Tốc độ di chuyển của pet khi điều khiển bằng WASD
+    // Loại bỏ tốc độ di chuyển bằng WASD vì pet sẽ chỉ đi theo Player và tấn công Enemy
+    // public float moveSpeed = 5f; // Tốc độ di chuyển của pet khi điều khiển bằng WASD
+
     public float followSpeed = 4f; // Tốc độ khi đi theo Player
     public float attackSpeed = 6f; // Tốc độ khi di chuyển tới Enemy để tấn công
     public float followDistance = 5f; // Khoảng cách tối đa để Pet bắt đầu đi theo Player
@@ -59,20 +61,19 @@ public class PetMovement : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 movement = Vector2.zero; // Mặc định pet không di chuyển
-        float currentCalculatedSpeed = moveSpeed; // Tốc độ sẽ được dùng cho Rigidbody
+        float currentCalculatedSpeed = 0f; // Tốc độ sẽ được dùng cho Rigidbody
 
-        // Bước 1: Kiểm tra đầu vào từ người chơi (WASD)
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-        Vector2 playerInputMovement = new Vector2(horizontalInput, verticalInput);
+        // Loại bỏ hoàn toàn phần đọc input từ người chơi (WASD)
+        // float horizontalInput = Input.GetAxis("Horizontal");
+        // float verticalInput = Input.GetAxis("Vertical");
+        // Vector2 playerInputMovement = new Vector2(horizontalInput, verticalInput);
+        // if (playerInputMovement.magnitude > 1f)
+        // {
+        //     playerInputMovement.Normalize();
+        // }
 
-        // Chuẩn hóa input để tránh di chuyển nhanh hơn khi đi chéo
-        if (playerInputMovement.magnitude > 1f)
-        {
-            playerInputMovement.Normalize();
-        }
 
-        // Bước 2: Quyết định hành vi của Pet (Ưu tiên tấn công, sau đó follow, cuối cùng là WASD)
+        // Bước 1: Quyết định hành vi của Pet (Ưu tiên tấn công, sau đó follow)
         GameObject nearestEnemy = FindNearestEnemy(); // Tìm Enemy gần nhất trong tầm phát hiện
 
         if (nearestEnemy != null && Vector2.Distance(transform.position, nearestEnemy.transform.position) <= detectionRange)
@@ -111,21 +112,19 @@ public class PetMovement : MonoBehaviour
             {
                 movement = Vector2.zero;
             }
-            // Nếu Player quá xa (>= followDistance), pet sẽ đứng yên trừ khi có input WASD
+            // Nếu Player quá xa (>= followDistance), pet sẽ đứng yên cho đến khi Player lại gần hoặc có Enemy
+            // Không cần xử lý gì thêm vì movement đã là Vector2.zero mặc định
         }
+        // else if (playerTransform == null && nearestEnemy == null)
+        // {
+        //     // Nếu không có cả Player và Enemy, pet sẽ đứng yên.
+        //     // Điều này đã được xử lý do movement mặc định là Vector2.zero
+        // }
 
-        // Bước 3: Áp dụng input WASD nếu không có hành vi follow/attack
-        // Nếu pet không có nhiệm vụ di chuyển theo AI, cho phép WASD điều khiển
-        if (movement == Vector2.zero && playerInputMovement.magnitude > 0)
-        {
-            movement = playerInputMovement;
-            currentCalculatedSpeed = moveSpeed; // Sử dụng tốc độ di chuyển của người chơi
-        }
 
-        // Bước 4: Áp dụng vận tốc cho Rigidbody2D
+        // Bước 2: Áp dụng vận tốc cho Rigidbody2D
         if (rb != null)
         {
-            // Lỗi ở đây đã được sửa: rb.linearVelocity -> rb.velocity
             rb.linearVelocity = movement * currentCalculatedSpeed;
 
             // Cập nhật Animator cho di chuyển (nếu có)
@@ -135,7 +134,7 @@ public class PetMovement : MonoBehaviour
             }
         }
 
-        // Bước 5: Lật hình ảnh pet theo hướng di chuyển ngang
+        // Bước 3: Lật hình ảnh pet theo hướng di chuyển ngang
         // Chỉ lật khi thực sự có di chuyển theo chiều ngang đáng kể
         if (movement.x < 0 && Mathf.Abs(movement.x) > 0.05f) // Di chuyển sang trái
         {

@@ -21,6 +21,9 @@ public class Gun : MonoBehaviour
 
     [SerializeField] private float detectionRange = 10f;
     [SerializeField] private LayerMask enemyLayer; // Set LayerMask to only detect Enemy
+    [SerializeField] private Transform shootZoneCenter;
+    [SerializeField] private float shootZoneRadius = 5f;
+
 
     void Start()
     {
@@ -89,7 +92,7 @@ public class Gun : MonoBehaviour
 
     Transform GetNearestEnemy()
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(firePos.position, detectionRange, enemyLayer);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(shootZoneCenter.position, shootZoneRadius, enemyLayer);
         Transform nearestEnemy = null;
         float minDistance = Mathf.Infinity;
 
@@ -107,6 +110,7 @@ public class Gun : MonoBehaviour
         }
         return nearestEnemy;
     }
+
 
 
     void AutoReload()

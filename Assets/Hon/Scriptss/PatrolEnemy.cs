@@ -27,7 +27,7 @@ public class PatrolEnemy : MonoBehaviour
         {
             inRange = true;
         }
-
+         
         else
         {
             inRange = false;
@@ -35,12 +35,6 @@ public class PatrolEnemy : MonoBehaviour
 
         if (inRange)
         {
-            if (player.position.x > transform.position.x && facingLeft == true)
-            {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                facingLeft = false;
-            }
-
             if (Vector2.Distance(transform.position, player.position) > retrieveDistance)
             {
                 animator.SetBool("Attack1", false);
@@ -49,7 +43,6 @@ public class PatrolEnemy : MonoBehaviour
             else
             {
                 animator.SetBool("Attack1", true);
-
             }
 
         }

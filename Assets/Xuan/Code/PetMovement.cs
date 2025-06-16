@@ -12,6 +12,7 @@ public class PetMovement : MonoBehaviour
     public float stopFollowDistance = 1.5f; // Khoảng cách tối thiểu để Pet dừng lại khi theo Player
     public float attackRange = 1.0f; // Phạm vi tấn công (khoảng cách Pet cần đến gần Enemy)
     public float detectionRange = 10f; // Phạm vi phát hiện Enemy và Player
+    public float petDamage = 10f; // Sát thương mà pet gây ra cho Enemy
 
     public float attackCooldown = 1.5f; // Thời gian hồi chiêu giữa các lần tấn công tự động
     private bool canAttack = true; // Biến kiểm soát hồi chiêu tấn công
@@ -63,16 +64,6 @@ public class PetMovement : MonoBehaviour
         Vector2 movement = Vector2.zero; // Mặc định pet không di chuyển
         float currentCalculatedSpeed = 0f; // Tốc độ sẽ được dùng cho Rigidbody
 
-        // Loại bỏ hoàn toàn phần đọc input từ người chơi (WASD)
-        // float horizontalInput = Input.GetAxis("Horizontal");
-        // float verticalInput = Input.GetAxis("Vertical");
-        // Vector2 playerInputMovement = new Vector2(horizontalInput, verticalInput);
-        // if (playerInputMovement.magnitude > 1f)
-        // {
-        //     playerInputMovement.Normalize();
-        // }
-
-
         // Bước 1: Quyết định hành vi của Pet (Ưu tiên tấn công, sau đó follow)
         GameObject nearestEnemy = FindNearestEnemy(); // Tìm Enemy gần nhất trong tầm phát hiện
 
@@ -113,13 +104,7 @@ public class PetMovement : MonoBehaviour
                 movement = Vector2.zero;
             }
             // Nếu Player quá xa (>= followDistance), pet sẽ đứng yên cho đến khi Player lại gần hoặc có Enemy
-            // Không cần xử lý gì thêm vì movement đã là Vector2.zero mặc định
         }
-        // else if (playerTransform == null && nearestEnemy == null)
-        // {
-        //     // Nếu không có cả Player và Enemy, pet sẽ đứng yên.
-        //     // Điều này đã được xử lý do movement mặc định là Vector2.zero
-        // }
 
 
         // Bước 2: Áp dụng vận tốc cho Rigidbody2D
@@ -179,8 +164,8 @@ public class PetMovement : MonoBehaviour
             {
                 petAnimator.SetTrigger(attackTriggerHash); // Kích hoạt animation tấn công
             }
-            Debug.Log(gameObject.name + " is attacking " + enemyToAttack.name + "!");
-            // Ở đây bạn có thể gọi một hàm gây sát thương trên Enemy (ví dụ: enemyToAttack.GetComponent<Health>().TakeDamage(damageAmount);)
+            Debug.Log(gameObject.name + " is initiating attack on " + enemyToAttack.name + "!");
+            // Thực hiện việc gây sát thương thực tế trong PetDealDamage()
 
             canAttack = false; // Bắt đầu thời gian hồi chiêu
             StartCoroutine(AttackCooldownRoutine());
@@ -199,12 +184,33 @@ public class PetMovement : MonoBehaviour
     public void PetDealDamage()
     {
         // Kiểm tra xem currentTargetEnemy có còn hợp lệ và trong tầm tấn công không
-        if (currentTargetEnemy != null && Vector2.Distance(transform.position, currentTargetEnemy.transform.position) <= attackRange)
+        if (currentTargetEnemy != null) // Kiểm tra null trước
         {
-            Debug.Log("Pet dealt damage to " + currentTargetEnemy.name + "!");
-            // Thực hiện logic gây sát thương thực tế vào đây
-            // Ví dụ: currentTargetEnemy.GetComponent<EnemyHealthScript>().TakeDamage(20);
-            // Hoặc: currentTargetEnemy.SendMessage("TakeDamage", 20, SendMessageOptions.DontRequireReceiver);
+            // Kiểm tra lại khoảng cách để đảm bảo địch vẫn trong tầm khi damage được kích hoạt (từ animation event)
+            if (Vector2.Distance(transform.position, currentTargetEnemy.transform.position) <= attackRange)
+            {
+                Debug.Log("Pet dealt " + petDamage + " damage to " + currentTargetEnemy.name + "!");
+                // Tìm component Enemy trên currentTargetEnemy và gọi hàm TakeDamage
+                Enemy enemyScript = currentTargetEnemy.GetComponent<Enemy>();
+                if (enemyScript != null)
+                {
+                    enemyScript.TakeDamage(petDamage);
+                }
+                else
+                {
+                    Debug.LogWarning("Enemy script not found on " + currentTargetEnemy.name + ". Cannot deal damage.");
+                }
+            }
+            else
+            {
+                // Nếu địch không còn trong tầm, có thể do địch di chuyển ra xa hoặc đã bị tiêu diệt bởi người chơi
+                Debug.Log("Pet's target " + currentTargetEnemy.name + " is out of attack range at time of damage event.");
+                currentTargetEnemy = null; // Xóa mục tiêu nếu nó đã thoát khỏi tầm
+            }
+        }
+        else
+        {
+            Debug.Log("PetDealDamage called but no currentTargetEnemy or it was destroyed.");
         }
     }
 }

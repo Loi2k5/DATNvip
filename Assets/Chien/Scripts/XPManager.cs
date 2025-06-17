@@ -47,9 +47,4 @@ public class XPManager : MonoBehaviour
     {
         levelText.text = "Level " + currentLevel;
     }
-
-    public void TestAddXP()
-    {
-        GainXP(20); // tăng 20 XP mỗi lần bấm
-    }
 }

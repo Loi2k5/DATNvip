@@ -1,8 +1,9 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    [SerializeField] private GameManager gameManager;
+    [SerializeField] private GameManager gameManager;  
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("EnemyBullet"))
@@ -17,7 +18,12 @@ public class PlayerCollision : MonoBehaviour
         }
         else if (collision.CompareTag("Energy"))
         {
-            gameManager.AddEnergy();
+            if (gameManager != null)
+                gameManager.AddEnergy();
+
+            if (gameManager != null)
+                gameManager.AddPoint(1);
+
             Destroy(collision.gameObject);
         }
     }

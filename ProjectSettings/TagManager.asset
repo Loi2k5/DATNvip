@@ -10,6 +10,8 @@ TagManager:
   - Explosion
   - EnemyBullet
   - Usb
+  - Pet
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -85,6 +87,9 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 2442071619
+    locked: 0
+  - name: Pet
+    uniqueID: 1393253965
     locked: 0
   m_RenderingLayers:
   - Default

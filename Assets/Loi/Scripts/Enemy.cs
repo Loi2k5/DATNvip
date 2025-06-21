@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public abstract class Enemy : MonoBehaviour
@@ -48,6 +48,9 @@ public abstract class Enemy : MonoBehaviour
     protected virtual void Die()
     {
         Destroy(gameObject);
+        // Giả sử bạn có tham chiếu tới GameManager
+        FindObjectOfType<GameManager>().AddEnergy();
+
     }
     protected void UpdateHpBar()
     {

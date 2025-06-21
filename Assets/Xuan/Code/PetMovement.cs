@@ -3,13 +3,15 @@ using System.Collections; // Cần thiết cho Coroutine (cho cooldown tấn cô
 
 public class PetMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f; // Tốc độ di chuyển của pet khi điều khiển bằng WASD
+    // Loại bỏ moveSpeed vì không còn điều khiển bằng WASD
     public float followSpeed = 4f; // Tốc độ khi đi theo Player
     public float attackSpeed = 6f; // Tốc độ khi di chuyển tới Enemy để tấn công
     public float followDistance = 5f; // Khoảng cách tối đa để Pet bắt đầu đi theo Player
     public float stopFollowDistance = 1.5f; // Khoảng cách tối thiểu để Pet dừng lại khi theo Player
     public float attackRange = 1.0f; // Phạm vi tấn công (khoảng cách Pet cần đến gần Enemy)
     public float detectionRange = 10f; // Phạm vi phát hiện Enemy và Player
+
+    public float petAttackDamage = 10f; // Sát thương của pet (đã đổi sang float để khớp với Enemy.TakeDamage)
 
     public float attackCooldown = 1.5f; // Thời gian hồi chiêu giữa các lần tấn công tự động
     private bool canAttack = true; // Biến kiểm soát hồi chiêu tấn công
@@ -40,7 +42,7 @@ public class PetMovement : MonoBehaviour
             Debug.LogWarning("Animator not found on this GameObject. Pet animations (IsMoving, Attack) will not play.");
         }
 
-        // Tìm Player khi bắt đầu game
+        // Tìm Player khi bắt đầu game bằng tag "Player"
         GameObject playerObject = GameObject.FindWithTag("Player");
         if (playerObject != null)
         {
@@ -59,20 +61,9 @@ public class PetMovement : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 movement = Vector2.zero; // Mặc định pet không di chuyển
-        float currentCalculatedSpeed = moveSpeed; // Tốc độ sẽ được dùng cho Rigidbody
+        float currentCalculatedSpeed = followSpeed; // Tốc độ mặc định khi không tấn công
 
-        // Bước 1: Kiểm tra đầu vào từ người chơi (WASD)
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
-        Vector2 playerInputMovement = new Vector2(horizontalInput, verticalInput);
-
-        // Chuẩn hóa input để tránh di chuyển nhanh hơn khi đi chéo
-        if (playerInputMovement.magnitude > 1f)
-        {
-            playerInputMovement.Normalize();
-        }
-
-        // Bước 2: Quyết định hành vi của Pet (Ưu tiên tấn công, sau đó follow, cuối cùng là WASD)
+        // Bước 1: Quyết định hành vi của Pet (Ưu tiên tấn công, sau đó follow)
         GameObject nearestEnemy = FindNearestEnemy(); // Tìm Enemy gần nhất trong tầm phát hiện
 
         if (nearestEnemy != null && Vector2.Distance(transform.position, nearestEnemy.transform.position) <= detectionRange)
@@ -111,22 +102,15 @@ public class PetMovement : MonoBehaviour
             {
                 movement = Vector2.zero;
             }
-            // Nếu Player quá xa (>= followDistance), pet sẽ đứng yên trừ khi có input WASD
+            // Nếu Player quá xa (>= followDistance), pet sẽ đứng yên (hoặc sẽ teleport đến player nếu bạn muốn)
+            // Hiện tại, nếu quá xa, pet sẽ chỉ đứng yên cho đến khi Player lại gần hơn followDistance.
         }
+        // Loại bỏ hoàn toàn phần xử lý input WASD ở đây
 
-        // Bước 3: Áp dụng input WASD nếu không có hành vi follow/attack
-        // Nếu pet không có nhiệm vụ di chuyển theo AI, cho phép WASD điều khiển
-        if (movement == Vector2.zero && playerInputMovement.magnitude > 0)
-        {
-            movement = playerInputMovement;
-            currentCalculatedSpeed = moveSpeed; // Sử dụng tốc độ di chuyển của người chơi
-        }
-
-        // Bước 4: Áp dụng vận tốc cho Rigidbody2D
+        // Bước 2: Áp dụng vận tốc cho Rigidbody2D
         if (rb != null)
         {
-            // Lỗi ở đây đã được sửa: rb.linearVelocity -> rb.velocity
-            rb.linearVelocity = movement * currentCalculatedSpeed;
+            rb.linearVelocity = movement * currentCalculatedSpeed; // Đã sửa lỗi: rb.linearVelocity -> rb.velocity
 
             // Cập nhật Animator cho di chuyển (nếu có)
             if (petAnimator != null)
@@ -135,7 +119,7 @@ public class PetMovement : MonoBehaviour
             }
         }
 
-        // Bước 5: Lật hình ảnh pet theo hướng di chuyển ngang
+        // Bước 3: Lật hình ảnh pet theo hướng di chuyển ngang
         // Chỉ lật khi thực sự có di chuyển theo chiều ngang đáng kể
         if (movement.x < 0 && Mathf.Abs(movement.x) > 0.05f) // Di chuyển sang trái
         {
@@ -152,19 +136,21 @@ public class PetMovement : MonoBehaviour
     // --- Hàm tìm kiếm Enemy gần nhất trong tầm phát hiện ---
     GameObject FindNearestEnemy()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        // Sử dụng FindObjectsOfType<Enemy>() để tìm tất cả các script Enemy đang hoạt động
+        Enemy[] enemies = FindObjectsOfType<Enemy>();
         GameObject nearestEnemy = null;
         float minDistance = detectionRange + 1f; // Khởi tạo với khoảng cách lớn hơn detectionRange
 
-        foreach (GameObject enemy in enemies)
+        foreach (Enemy enemyComponent in enemies)
         {
-            if (enemy != null) // Đảm bảo Enemy không phải là null (có thể đã bị hủy)
+            // Kiểm tra nếu enemyComponent không null (đã bị hủy) và đang hoạt động
+            if (enemyComponent != null && enemyComponent.gameObject.activeInHierarchy)
             {
-                float distance = Vector2.Distance(transform.position, enemy.transform.position);
+                float distance = Vector2.Distance(transform.position, enemyComponent.transform.position);
                 if (distance < minDistance && distance <= detectionRange) // Chỉ xem xét Enemy trong tầm phát hiện
                 {
                     minDistance = distance;
-                    nearestEnemy = enemy;
+                    nearestEnemy = enemyComponent.gameObject; // Lấy GameObject của Enemy
                 }
             }
         }
@@ -180,8 +166,8 @@ public class PetMovement : MonoBehaviour
             {
                 petAnimator.SetTrigger(attackTriggerHash); // Kích hoạt animation tấn công
             }
-            Debug.Log(gameObject.name + " is attacking " + enemyToAttack.name + "!");
-            // Ở đây bạn có thể gọi một hàm gây sát thương trên Enemy (ví dụ: enemyToAttack.GetComponent<Health>().TakeDamage(damageAmount);)
+            Debug.Log(gameObject.name + " is initiating attack on " + enemyToAttack.name + "!");
+            // Ở đây bạn KHÔNG gây sát thương ngay lập tức. Sát thương sẽ được gây ra bởi Animation Event.
 
             canAttack = false; // Bắt đầu thời gian hồi chiêu
             StartCoroutine(AttackCooldownRoutine());
@@ -202,10 +188,21 @@ public class PetMovement : MonoBehaviour
         // Kiểm tra xem currentTargetEnemy có còn hợp lệ và trong tầm tấn công không
         if (currentTargetEnemy != null && Vector2.Distance(transform.position, currentTargetEnemy.transform.position) <= attackRange)
         {
-            Debug.Log("Pet dealt damage to " + currentTargetEnemy.name + "!");
-            // Thực hiện logic gây sát thương thực tế vào đây
-            // Ví dụ: currentTargetEnemy.GetComponent<EnemyHealthScript>().TakeDamage(20);
-            // Hoặc: currentTargetEnemy.SendMessage("TakeDamage", 20, SendMessageOptions.DontRequireReceiver);
+            // Lấy component Enemy từ kẻ địch và gọi hàm TakeDamage
+            Enemy enemyScript = currentTargetEnemy.GetComponent<Enemy>();
+            if (enemyScript != null)
+            {
+                enemyScript.TakeDamage(petAttackDamage); // Gây sát thương lên kẻ địch
+            }
+            else
+            {
+                Debug.LogWarning("Enemy " + currentTargetEnemy.name + " does not have an Enemy script attached!");
+            }
+        }
+        else
+        {
+            // Có thể mục tiêu đã bị hủy hoặc di chuyển ra ngoài tầm trong lúc animation đang diễn ra.
+            Debug.Log("Pet's target is no longer valid or in range for damage.");
         }
     }
 }

@@ -25,7 +25,7 @@ public class PetMovement : MonoBehaviour
     // Tham số Animator để dễ sử dụng và tránh lỗi chính tả
     private readonly int isMovingHash = Animator.StringToHash("IsMoving");
     private readonly int attackTriggerHash = Animator.StringToHash("Attack");
-
+    private readonly int speedHash = Animator.StringToHash("Speed");
 
     void Start()
     {
@@ -115,7 +115,8 @@ public class PetMovement : MonoBehaviour
             // Cập nhật Animator cho di chuyển (nếu có)
             if (petAnimator != null)
             {
-                petAnimator.SetBool(isMovingHash, movement.magnitude > 0.1f); // "IsMoving" là true nếu đang di chuyển
+                float currentSpeed = movement.magnitude * currentCalculatedSpeed;
+                petAnimator.SetFloat(speedHash, currentSpeed); // "IsMoving" là true nếu đang di chuyển
             }
         }
 

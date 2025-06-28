@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float maxHp = 100f;
     private float currentHp;
     [SerializeField] private Image hpBar;
+    [SerializeField] private float maxMoveSpeed = 10f;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -79,5 +80,9 @@ public class Player : MonoBehaviour
         {
             hpBar.fillAmount = currentHp / maxHp;
         }
+    }
+    public void TangTocChay()
+    {
+        moveSpeed = Mathf.Min(moveSpeed + 2f, maxMoveSpeed);    
     }
 }

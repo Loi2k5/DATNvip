@@ -84,4 +84,6 @@ public class Gun : MonoBehaviour
         shotDelay = Mathf.Max(0.05f, shotDelay - 0.2f);
         Debug.Log("Tốc độ bắn mới: " + shotDelay);
     }
+    
+
 }

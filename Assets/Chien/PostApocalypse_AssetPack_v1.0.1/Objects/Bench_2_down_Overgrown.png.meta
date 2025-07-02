@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bench_2_down_Overgrown_0: 5737876023628566956
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

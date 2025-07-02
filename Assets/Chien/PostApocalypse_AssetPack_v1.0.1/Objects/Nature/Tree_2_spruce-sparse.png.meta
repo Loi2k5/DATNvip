@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tree_2_spruce-sparse_0: -3539747175204619459
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

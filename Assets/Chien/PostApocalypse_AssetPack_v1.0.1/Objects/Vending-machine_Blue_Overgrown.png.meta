@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Vending-machine_Blue_Overgrown_0: 311220136914930146
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

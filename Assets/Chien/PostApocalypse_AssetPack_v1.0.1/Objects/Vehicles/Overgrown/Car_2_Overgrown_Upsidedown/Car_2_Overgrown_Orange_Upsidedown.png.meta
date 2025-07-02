@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Car_2_Overgrown_Orange_Upsidedown_0: -2326741836874161118
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

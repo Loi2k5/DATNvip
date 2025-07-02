@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Puddle_On-Grass_1_Grass_0: -5383113583001496161
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Grass_3_Stepping-On-Animation_0: -9078022250949778171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

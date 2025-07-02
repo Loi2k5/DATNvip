@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Container_12_Green_Horizontal_Overgrown_0: -2960444036350465599
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

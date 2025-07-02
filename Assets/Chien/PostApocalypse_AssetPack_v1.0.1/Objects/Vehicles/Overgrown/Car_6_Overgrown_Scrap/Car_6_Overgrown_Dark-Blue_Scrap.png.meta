@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Car_6_Overgrown_Dark-Blue_Scrap_0: -7250361050807231507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

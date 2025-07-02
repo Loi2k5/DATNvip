@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Car_4_Overgrown_Yellow_0: 7474198569717141437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

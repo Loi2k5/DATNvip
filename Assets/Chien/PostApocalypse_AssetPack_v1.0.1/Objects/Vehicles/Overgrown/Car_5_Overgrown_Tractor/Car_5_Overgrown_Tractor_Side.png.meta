@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Car_5_Overgrown_Tractor_Side_0: -8817567191119514325
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

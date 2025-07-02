@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Stop-sign_Down_2_Overgrown_0: 4450381884681237092
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

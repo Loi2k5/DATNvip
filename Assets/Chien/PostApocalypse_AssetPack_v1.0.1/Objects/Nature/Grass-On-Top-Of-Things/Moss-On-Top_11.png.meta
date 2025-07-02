@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Moss-On-Top_11_0: 6982411710842891656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

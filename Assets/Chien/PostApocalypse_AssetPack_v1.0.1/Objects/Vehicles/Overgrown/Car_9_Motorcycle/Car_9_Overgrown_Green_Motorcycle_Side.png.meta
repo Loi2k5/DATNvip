@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Car_9_Overgrown_Green_Motorcycle_Side_0: 2395497323186653660
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

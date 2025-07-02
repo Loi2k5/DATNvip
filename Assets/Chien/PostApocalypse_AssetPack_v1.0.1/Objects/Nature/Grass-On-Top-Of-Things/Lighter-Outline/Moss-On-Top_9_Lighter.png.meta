@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Moss-On-Top_9_Lighter_0: -2916618133044627587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

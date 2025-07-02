@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Car_8_Overgrown_Green_Bus_0: -3575436566303649535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

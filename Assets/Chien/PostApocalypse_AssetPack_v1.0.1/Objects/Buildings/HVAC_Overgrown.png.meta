@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HVAC_Overgrown_0: 7282869967360042056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

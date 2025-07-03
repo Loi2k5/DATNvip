@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class MinibossMelee : MonoBehaviour
 {
@@ -9,29 +10,38 @@ public class MinibossMelee : MonoBehaviour
     [SerializeField] private float attackDamage = 20f;
     [SerializeField] private float attackCooldown = 2f;
 
+    [Header("Shooting")]
+    [SerializeField] private GameObject enemyBullet;  // Prefab đạn của miniboss
+    [SerializeField] private Transform firePoint;     // Vị trí bắn đạn
+
+    [Header("Reward")]
+    [SerializeField] private GameObject usbPrefabs;   // USB rớt ra khi chết
+
+    [Header("HP UI")]
+    [SerializeField] private Image hpBar;             // Thanh máu
+
     private float currentHp;
-    private float nextAttackTime = 0f;
+    private float nextAttackTime;
 
     [Header("References")]
     private Player player;
     private Animator animator;
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
 
     private void Start()
     {
-        player = Object.FindFirstObjectByType<Player>();
+        player = FindObjectOfType<Player>();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         currentHp = maxHp;
+        UpdateHpUI();
     }
 
     private void FixedUpdate()
     {
-        if (player == null || !player.enabled)
-        {
-            rb.linearVelocity = Vector2.zero;
-            return;
-        }
+        if (player == null) return;
 
         float distance = Vector2.Distance(transform.position, player.transform.position);
 
@@ -53,56 +63,63 @@ public class MinibossMelee : MonoBehaviour
 
     private void MoveTowardsPlayer()
     {
-        if (player == null || !player.enabled) return;
-
         Vector2 direction = (player.transform.position - transform.position).normalized;
         rb.linearVelocity = direction * moveSpeed;
 
-        if (animator != null)
-            animator.SetBool("IsMoving", true);
+        // Xoay mặt miniboss
+        if (spriteRenderer != null)
+            spriteRenderer.flipX = direction.x < 0;
+
+        animator?.SetBool("IsMoving", true);
     }
 
     private void Attack()
     {
-        if (animator != null)
-        {
-            animator.SetTrigger("Attack");
-            animator.SetBool("IsMoving", false);
-        }
-
-        if (player == null || !player.enabled) return;
+        animator?.SetTrigger("Attack");
+        animator?.SetBool("IsMoving", false);
 
         float distance = Vector2.Distance(transform.position, player.transform.position);
         if (distance <= attackRange)
         {
             player.TakeDamage(attackDamage);
-            Debug.Log("Player bị chém bởi miniboss!");
+            Debug.Log("Miniboss tấn công Player!");
+        }
+
+        // Bắn đạn nếu có setup
+        if (enemyBullet != null && firePoint != null)
+        {
+            Instantiate(enemyBullet, firePoint.position, Quaternion.identity);
         }
     }
 
-    public void TakeDamage(float amount)
+    public void TakeDamage(float damage)
     {
-        currentHp -= amount;
-        Debug.Log("Miniboss mất máu: " + amount);
+        currentHp -= damage;
+        currentHp = Mathf.Max(currentHp, 0);
+        UpdateHpUI();
 
         if (currentHp <= 0)
             Die();
     }
 
+    private void UpdateHpUI()
+    {
+        if (hpBar != null)
+            hpBar.fillAmount = currentHp / maxHp;
+    }
+
     private void Die()
     {
         Debug.Log("Miniboss chết!");
-        if (animator != null) animator.SetTrigger("Die");
-        Destroy(gameObject, 1.2f);
-    }
+        animator?.SetTrigger("Die");
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("PlayerBullet"))
+        // Rớt vật phẩm (USB)
+        if (usbPrefabs != null)
         {
-            // Ví dụ đạn có sát thương cố định, hoặc bạn có thể lấy damage từ script đạn
-            TakeDamage(10f);
+            Instantiate(usbPrefabs, transform.position, Quaternion.identity);
         }
+
+        Destroy(gameObject, 1.2f); // Delay để animation Die hiển thị
     }
 
     private void OnDrawGizmosSelected()

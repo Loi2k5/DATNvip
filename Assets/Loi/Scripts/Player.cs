@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Player : MonoBehaviour
@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     private float currentHp;
     [SerializeField] private Image hpBar;
     [SerializeField] private float maxMoveSpeed = 10f;
+    [SerializeField] private GameManager gameManager;
+    private bool isDead = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,7 +31,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDead) return;
         MovePlayer();
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            gameManager.PauseGameMenu();
+        }
     }
     void MovePlayer()
     {
@@ -72,7 +80,11 @@ public class Player : MonoBehaviour
     }
     private void Die()
     {
-        Destroy(gameObject);
+        isDead = true;
+        animator.SetBool("isRun", false);
+        rb.linearVelocity = Vector2.zero; // Dừng di chuyển
+        Time.timeScale = 0f;
+        gameManager.GameOverMenu();
     }
     private void UpdateHpBar()
     {
@@ -85,4 +97,11 @@ public class Player : MonoBehaviour
     {
         moveSpeed = Mathf.Min(moveSpeed + 2f, maxMoveSpeed);    
     }
+    public void HoiMaul()
+    {
+        maxHp = Mathf.Min(maxHp + 300f, 1400f);
+        currentHp = maxHp;
+        UpdateHpBar();
+    }
+
 }

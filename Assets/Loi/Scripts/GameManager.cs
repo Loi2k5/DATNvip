@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,15 +13,18 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject skillUpgradeUI;
     [SerializeField] private TextMeshProUGUI pointText;
 
-    private int currentPoints = 0;
+    private int currentPoints = 0;//diem nang luong mua pet
 
     private bool skillUIShown = false;
+    [SerializeField] private GameObject gameOverMenu;
+    [SerializeField] private GameObject pauseMenu;
 
     void Start()
     {
         UpdateUI();
         currentEnergy = 0;
-        skillUIShown = false;
+        skillUIShown = false;  
+        gameOverMenu.SetActive(false); pauseMenu.SetActive(false);
         UpdateEnergyBar();
 
         if (skillUpgradeUI != null)
@@ -90,6 +94,37 @@ public class GameManager : MonoBehaviour
             pointText.text = $" {currentPoints}";
         }
     }
+    public void GameOverMenu()
+    {
+        Debug.Log("GameOverMenu được gọi");
+
+        if (skillUpgradeUI != null) skillUpgradeUI.SetActive(false);
+        if (pauseMenu != null) pauseMenu.SetActive(false);
+        if (gameOverMenu != null) gameOverMenu.SetActive(true);
+
+        // Không cần Time.timeScale ở đây nếu đã gọi trong Die()
+    }
 
 
+
+    public void PauseGameMenu()
+    {
+        pauseMenu.SetActive(true);
+        gameOverMenu.SetActive(false);
+        Time.timeScale = 0f;
+    }
+    public void ResumeGame()
+    {
+        Time.timeScale = 1f; // Chạy lại thời gian
+        if (pauseMenu != null)
+            pauseMenu.SetActive(false);
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }    
+    public void ContinuesGame()
+    {
+        ResumeGame();
+    }    
 }

@@ -1,0 +1,4980 @@
+fileFormatVersion: 2
+guid: d4684c8a9319d1245b1adeec2b6ad8c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5222865137254718310
+    second: LW3_MainMenuShop-hd_0
+  - first:
+      213: 8518237956764332265
+    second: LW3_MainMenuShop-hd_1
+  - first:
+      213: -2682489578990291152
+    second: LW3_MainMenuShop-hd_2
+  - first:
+      213: -5872547151490778907
+    second: LW3_MainMenuShop-hd_3
+  - first:
+      213: 308074444907301803
+    second: LW3_MainMenuShop-hd_4
+  - first:
+      213: -1001580606554675524
+    second: LW3_MainMenuShop-hd_5
+  - first:
+      213: 4066110745954395696
+    second: LW3_MainMenuShop-hd_6
+  - first:
+      213: 3250854049672813919
+    second: LW3_MainMenuShop-hd_7
+  - first:
+      213: -623532569286872739
+    second: LW3_MainMenuShop-hd_8
+  - first:
+      213: -2735361027147920935
+    second: LW3_MainMenuShop-hd_9
+  - first:
+      213: 6341661185476527346
+    second: LW3_MainMenuShop-hd_10
+  - first:
+      213: 6101530523856172955
+    second: LW3_MainMenuShop-hd_11
+  - first:
+      213: -6323338903219290634
+    second: LW3_MainMenuShop-hd_12
+  - first:
+      213: -1255198295545703346
+    second: LW3_MainMenuShop-hd_13
+  - first:
+      213: -5568346258208612073
+    second: LW3_MainMenuShop-hd_14
+  - first:
+      213: 5765105968658510663
+    second: LW3_MainMenuShop-hd_15
+  - first:
+      213: -3354083801750577265
+    second: LW3_MainMenuShop-hd_16
+  - first:
+      213: -8008286374735534311
+    second: LW3_MainMenuShop-hd_17
+  - first:
+      213: -2700685679558439102
+    second: LW3_MainMenuShop-hd_18
+  - first:
+      213: -2547860721394115775
+    second: LW3_MainMenuShop-hd_19
+  - first:
+      213: 5219679619874433331
+    second: LW3_MainMenuShop-hd_20
+  - first:
+      213: 3260422872523731136
+    second: LW3_MainMenuShop-hd_21
+  - first:
+      213: 5372538371176066146
+    second: LW3_MainMenuShop-hd_22
+  - first:
+      213: -5962218439089674731
+    second: LW3_MainMenuShop-hd_23
+  - first:
+      213: -5767522003286638077
+    second: LW3_MainMenuShop-hd_24
+  - first:
+      213: 4032454413008179975
+    second: LW3_MainMenuShop-hd_25
+  - first:
+      213: 5119645056846856803
+    second: LW3_MainMenuShop-hd_26
+  - first:
+      213: -3233712688060861867
+    second: LW3_MainMenuShop-hd_27
+  - first:
+      213: -3920004112226365411
+    second: LW3_MainMenuShop-hd_28
+  - first:
+      213: 8560795444561347022
+    second: LW3_MainMenuShop-hd_29
+  - first:
+      213: 8389747019187197346
+    second: LW3_MainMenuShop-hd_30
+  - first:
+      213: 421802588218353778
+    second: LW3_MainMenuShop-hd_31
+  - first:
+      213: -1403573142183286685
+    second: LW3_MainMenuShop-hd_32
+  - first:
+      213: -1590930587373474142
+    second: LW3_MainMenuShop-hd_33
+  - first:
+      213: 1230460585327604057
+    second: LW3_MainMenuShop-hd_34
+  - first:
+      213: -6529779813599817606
+    second: LW3_MainMenuShop-hd_35
+  - first:
+      213: -836752353121266874
+    second: LW3_MainMenuShop-hd_36
+  - first:
+      213: -1538649727499820842
+    second: LW3_MainMenuShop-hd_37
+  - first:
+      213: 3914582748720111377
+    second: LW3_MainMenuShop-hd_38
+  - first:
+      213: -5204969047990205553
+    second: LW3_MainMenuShop-hd_39
+  - first:
+      213: 547464055700764312
+    second: LW3_MainMenuShop-hd_40
+  - first:
+      213: 3448276133853010180
+    second: LW3_MainMenuShop-hd_41
+  - first:
+      213: -6846468174447706641
+    second: LW3_MainMenuShop-hd_42
+  - first:
+      213: 101775342686486365
+    second: LW3_MainMenuShop-hd_43
+  - first:
+      213: -6655640883619952249
+    second: LW3_MainMenuShop-hd_44
+  - first:
+      213: -7004009274219273791
+    second: LW3_MainMenuShop-hd_45
+  - first:
+      213: 2440936177153413958
+    second: LW3_MainMenuShop-hd_46
+  - first:
+      213: 7429307849000277991
+    second: LW3_MainMenuShop-hd_47
+  - first:
+      213: -6603127693018441683
+    second: LW3_MainMenuShop-hd_48
+  - first:
+      213: -7648454415749583348
+    second: LW3_MainMenuShop-hd_49
+  - first:
+      213: -5380963409952877273
+    second: LW3_MainMenuShop-hd_50
+  - first:
+      213: -2998061864830252225
+    second: LW3_MainMenuShop-hd_51
+  - first:
+      213: -8289412582180890548
+    second: LW3_MainMenuShop-hd_52
+  - first:
+      213: 2786725448501436034
+    second: LW3_MainMenuShop-hd_53
+  - first:
+      213: -2831817449081159954
+    second: LW3_MainMenuShop-hd_54
+  - first:
+      213: -2336746584477505951
+    second: LW3_MainMenuShop-hd_55
+  - first:
+      213: -580449588382958540
+    second: LW3_MainMenuShop-hd_56
+  - first:
+      213: 8859875313231232426
+    second: LW3_MainMenuShop-hd_57
+  - first:
+      213: -2808634706059731332
+    second: LW3_MainMenuShop-hd_58
+  - first:
+      213: -8170194677728365106
+    second: LW3_MainMenuShop-hd_59
+  - first:
+      213: -8662324886118173604
+    second: LW3_MainMenuShop-hd_60
+  - first:
+      213: 1167264857060399307
+    second: LW3_MainMenuShop-hd_61
+  - first:
+      213: 4720384170024199958
+    second: LW3_MainMenuShop-hd_62
+  - first:
+      213: 2844900767397021497
+    second: LW3_MainMenuShop-hd_63
+  - first:
+      213: -6206341035510094142
+    second: LW3_MainMenuShop-hd_64
+  - first:
+      213: -8310244763987593327
+    second: LW3_MainMenuShop-hd_65
+  - first:
+      213: 2821017602912585502
+    second: LW3_MainMenuShop-hd_66
+  - first:
+      213: 7929649768318594407
+    second: LW3_MainMenuShop-hd_67
+  - first:
+      213: 323814847581339279
+    second: LW3_MainMenuShop-hd_68
+  - first:
+      213: 3520063351086367513
+    second: LW3_MainMenuShop-hd_69
+  - first:
+      213: -6520201837411938704
+    second: LW3_MainMenuShop-hd_70
+  - first:
+      213: 2225816387765377048
+    second: LW3_MainMenuShop-hd_71
+  - first:
+      213: 8102723448682284989
+    second: LW3_MainMenuShop-hd_72
+  - first:
+      213: 1296165803248090937
+    second: LW3_MainMenuShop-hd_73
+  - first:
+      213: 4121679833513113758
+    second: LW3_MainMenuShop-hd_74
+  - first:
+      213: 1288387732324247417
+    second: LW3_MainMenuShop-hd_75
+  - first:
+      213: 4790848096771182863
+    second: LW3_MainMenuShop-hd_76
+  - first:
+      213: -5838898200523817336
+    second: LW3_MainMenuShop-hd_77
+  - first:
+      213: -755614342367528376
+    second: LW3_MainMenuShop-hd_78
+  - first:
+      213: -5330658553479256426
+    second: LW3_MainMenuShop-hd_79
+  - first:
+      213: 4803428547541166179
+    second: LW3_MainMenuShop-hd_80
+  - first:
+      213: 935243825129538038
+    second: LW3_MainMenuShop-hd_81
+  - first:
+      213: -6333695215858681483
+    second: LW3_MainMenuShop-hd_82
+  - first:
+      213: 37753124124023700
+    second: LW3_MainMenuShop-hd_83
+  - first:
+      213: 2582646009092756084
+    second: LW3_MainMenuShop-hd_84
+  - first:
+      213: 5269074850919005571
+    second: LW3_MainMenuShop-hd_85
+  - first:
+      213: -5188334240095086289
+    second: LW3_MainMenuShop-hd_86
+  - first:
+      213: -8552972710428214854
+    second: LW3_MainMenuShop-hd_87
+  - first:
+      213: -3286874352402756738
+    second: LW3_MainMenuShop-hd_88
+  - first:
+      213: 3914948920568495223
+    second: LW3_MainMenuShop-hd_89
+  - first:
+      213: 1602549323893048867
+    second: LW3_MainMenuShop-hd_90
+  - first:
+      213: 5432234226485458958
+    second: LW3_MainMenuShop-hd_91
+  - first:
+      213: -2668214671811522300
+    second: LW3_MainMenuShop-hd_92
+  - first:
+      213: -7114566838233286045
+    second: LW3_MainMenuShop-hd_93
+  - first:
+      213: 2450394773824795587
+    second: LW3_MainMenuShop-hd_94
+  - first:
+      213: -4967063665492525803
+    second: LW3_MainMenuShop-hd_95
+  - first:
+      213: 5657018197588133826
+    second: LW3_MainMenuShop-hd_96
+  - first:
+      213: -1222361204549832017
+    second: LW3_MainMenuShop-hd_97
+  - first:
+      213: -8434359128641824508
+    second: LW3_MainMenuShop-hd_98
+  - first:
+      213: 4283258098572505854
+    second: LW3_MainMenuShop-hd_99
+  - first:
+      213: -7882076368049583064
+    second: LW3_MainMenuShop-hd_100
+  - first:
+      213: 8220737085004693255
+    second: LW3_MainMenuShop-hd_101
+  - first:
+      213: -6827600873588216764
+    second: LW3_MainMenuShop-hd_102
+  - first:
+      213: 4533838370193697076
+    second: LW3_MainMenuShop-hd_103
+  - first:
+      213: -8407736634037433522
+    second: LW3_MainMenuShop-hd_104
+  - first:
+      213: 4119853835350170499
+    second: LW3_MainMenuShop-hd_105
+  - first:
+      213: -5139554250839442498
+    second: LW3_MainMenuShop-hd_106
+  - first:
+      213: 7278234549244558048
+    second: LW3_MainMenuShop-hd_107
+  - first:
+      213: 5039950434084347802
+    second: LW3_MainMenuShop-hd_108
+  - first:
+      213: -1825008047063645184
+    second: LW3_MainMenuShop-hd_109
+  - first:
+      213: -3227886404322202337
+    second: LW3_MainMenuShop-hd_110
+  - first:
+      213: 3329688475280533340
+    second: LW3_MainMenuShop-hd_111
+  - first:
+      213: 8965250054779428749
+    second: LW3_MainMenuShop-hd_112
+  - first:
+      213: -1309152500547448121
+    second: LW3_MainMenuShop-hd_113
+  - first:
+      213: -2994982163765950211
+    second: LW3_MainMenuShop-hd_114
+  - first:
+      213: -4245604769317469222
+    second: LW3_MainMenuShop-hd_115
+  - first:
+      213: 3527234348946605575
+    second: LW3_MainMenuShop-hd_116
+  - first:
+      213: -4101381088371695762
+    second: LW3_MainMenuShop-hd_117
+  - first:
+      213: -5204385380259752610
+    second: LW3_MainMenuShop-hd_118
+  - first:
+      213: 7238631457236223875
+    second: LW3_MainMenuShop-hd_119
+  - first:
+      213: 4178867353311211582
+    second: LW3_MainMenuShop-hd_120
+  - first:
+      213: -7210041159848304510
+    second: LW3_MainMenuShop-hd_121
+  - first:
+      213: 347558148884559186
+    second: LW3_MainMenuShop-hd_122
+  - first:
+      213: 2239389632426856503
+    second: LW3_MainMenuShop-hd_123
+  - first:
+      213: -7698226260714387415
+    second: LW3_MainMenuShop-hd_124
+  - first:
+      213: 437524386786401353
+    second: LW3_MainMenuShop-hd_125
+  - first:
+      213: 8724483158588923004
+    second: LW3_MainMenuShop-hd_126
+  - first:
+      213: -6858887728139695758
+    second: LW3_MainMenuShop-hd_127
+  - first:
+      213: -3643808996911647929
+    second: LW3_MainMenuShop-hd_128
+  - first:
+      213: 2914587946335426884
+    second: LW3_MainMenuShop-hd_129
+  - first:
+      213: 7883470963580688285
+    second: LW3_MainMenuShop-hd_130
+  - first:
+      213: 3249354333126118012
+    second: LW3_MainMenuShop-hd_131
+  - first:
+      213: 6069925547267397043
+    second: LW3_MainMenuShop-hd_132
+  - first:
+      213: -8004283506155402576
+    second: LW3_MainMenuShop-hd_133
+  - first:
+      213: 2004755188615517272
+    second: LW3_MainMenuShop-hd_134
+  - first:
+      213: -4538675236927066322
+    second: LW3_MainMenuShop-hd_135
+  - first:
+      213: -1418725737317754919
+    second: LW3_MainMenuShop-hd_136
+  - first:
+      213: 51712769210556248
+    second: LW3_MainMenuShop-hd_137
+  - first:
+      213: -8408827538988055072
+    second: LW3_MainMenuShop-hd_138
+  - first:
+      213: -542419417301189639
+    second: LW3_MainMenuShop-hd_139
+  - first:
+      213: 828682513432089639
+    second: LW3_MainMenuShop-hd_140
+  - first:
+      213: -3006733624869090369
+    second: LW3_MainMenuShop-hd_141
+  - first:
+      213: 1023069673511271350
+    second: LW3_MainMenuShop-hd_142
+  - first:
+      213: -8436012177272278193
+    second: LW3_MainMenuShop-hd_143
+  - first:
+      213: 6901616328153585564
+    second: LW3_MainMenuShop-hd_144
+  - first:
+      213: 2004515155072215977
+    second: LW3_MainMenuShop-hd_145
+  - first:
+      213: -5328887500533295312
+    second: LW3_MainMenuShop-hd_146
+  - first:
+      213: -5060590050673752872
+    second: LW3_MainMenuShop-hd_147
+  - first:
+      213: 2260831492687929393
+    second: LW3_MainMenuShop-hd_148
+  - first:
+      213: 4822080840935802929
+    second: LW3_MainMenuShop-hd_149
+  - first:
+      213: 7868901184362128936
+    second: LW3_MainMenuShop-hd_150
+  - first:
+      213: -2539044099124485809
+    second: LW3_MainMenuShop-hd_151
+  - first:
+      213: 1719438067814359526
+    second: LW3_MainMenuShop-hd_152
+  - first:
+      213: -5630493949331906882
+    second: LW3_MainMenuShop-hd_153
+  - first:
+      213: 5299218475699900729
+    second: LW3_MainMenuShop-hd_154
+  - first:
+      213: 7677456520325124843
+    second: LW3_MainMenuShop-hd_155
+  - first:
+      213: -2776255633723251180
+    second: LW3_MainMenuShop-hd_156
+  - first:
+      213: 3447658774104920200
+    second: LW3_MainMenuShop-hd_157
+  - first:
+      213: -7232758212301716477
+    second: LW3_MainMenuShop-hd_158
+  - first:
+      213: 5217897481480273449
+    second: LW3_MainMenuShop-hd_159
+  - first:
+      213: -5853336595368885075
+    second: LW3_MainMenuShop-hd_160
+  - first:
+      213: 953311783022262785
+    second: LW3_MainMenuShop-hd_161
+  - first:
+      213: -834039268777855266
+    second: LW3_MainMenuShop-hd_162
+  - first:
+      213: -3916283431077675363
+    second: LW3_MainMenuShop-hd_163
+  - first:
+      213: 4415271644452308066
+    second: LW3_MainMenuShop-hd_164
+  - first:
+      213: -3560753397208915328
+    second: LW3_MainMenuShop-hd_165
+  - first:
+      213: 6054533134165658441
+    second: LW3_MainMenuShop-hd_166
+  - first:
+      213: 4294193240044271915
+    second: LW3_MainMenuShop-hd_167
+  - first:
+      213: -6433730688247298950
+    second: LW3_MainMenuShop-hd_168
+  - first:
+      213: -7742352614664969474
+    second: LW3_MainMenuShop-hd_169
+  - first:
+      213: -1279061381896374631
+    second: LW3_MainMenuShop-hd_170
+  - first:
+      213: -3458441881605950932
+    second: LW3_MainMenuShop-hd_171
+  - first:
+      213: -1816028089471949338
+    second: LW3_MainMenuShop-hd_172
+  - first:
+      213: -554259136806474864
+    second: LW3_MainMenuShop-hd_173
+  - first:
+      213: 5639063089615157102
+    second: LW3_MainMenuShop-hd_174
+  - first:
+      213: 7862704566269501192
+    second: LW3_MainMenuShop-hd_175
+  - first:
+      213: 4614656451296116584
+    second: LW3_MainMenuShop-hd_176
+  - first:
+      213: 2335737242035748755
+    second: LW3_MainMenuShop-hd_177
+  - first:
+      213: -3894016733264992463
+    second: LW3_MainMenuShop-hd_178
+  - first:
+      213: -8959722504318078590
+    second: LW3_MainMenuShop-hd_179
+  - first:
+      213: -6647298278949132308
+    second: LW3_MainMenuShop-hd_180
+  - first:
+      213: 5430773543403797307
+    second: LW3_MainMenuShop-hd_181
+  - first:
+      213: 4088225251060461740
+    second: LW3_MainMenuShop-hd_182
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1559
+        width: 326
+        height: 487
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d51ec54918ef2346a92923f6bb9ecd9
+      internalID: -1214075317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2003
+        width: 97
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee48499a82d61a46aeda11255d7b5bf
+      internalID: 1153441568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_2
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 2013
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5ab3dff9df6a245b03db9909fb6aef
+      internalID: 413994658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_3
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 2007
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ceeaf851cf9e0408c9e930ddc591f9
+      internalID: -1713864577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_4
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 2014
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c13b13f1cb88944599632955b14b426
+      internalID: -11487881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_5
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 2014
+        width: 59
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0836e83f2a9057d4cb0df1e82aa8b5bb
+      internalID: 2010164204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_6
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1779
+        width: 75
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55bfae397f92fa14cba4137e2174016e
+      internalID: -112082632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_7
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1945
+        width: 49
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b348cd4d49b89bb4e9f24e26d2e921ae
+      internalID: -1930942832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_8
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1791
+        width: 194
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4570c537a8284e64984f799db285cf5c
+      internalID: -631545512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_9
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1848
+        width: 102
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe83b32a298dcb4ba8271dd3aaaf16d
+      internalID: -1751177931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_10
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1916
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cb9bc1e12894e44ac4dc41ec038da1
+      internalID: -636569998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_11
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1761
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b47beb98ac252418e6dacfab768b60
+      internalID: -74353451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_12
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1767
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5931f84c1decb4e9bedf48fe04f3aa
+      internalID: 1242293822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_13
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1766
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af375b63aa45fb458cd2510eaed1880
+      internalID: 1526301324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_14
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1759
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cc394e71ffb4f428db2febd76dee28
+      internalID: 1881281023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_15
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1759
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f59ce425a5d74499c3f4125dc4fe0a
+      internalID: 1718894994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_16
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1735
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad407c49ebc97b44c97059f50ed2bb1a
+      internalID: 1103854912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_17
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1729
+        width: 70
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250ba0a1727e20346980d94bf21ed4af
+      internalID: 994602268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_18
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1729
+        width: 47
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6720d72bfb9a349b933bd9c1821cd3
+      internalID: -1430260816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_19
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1729
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05917ef345aff71448a19fcd82cb75ad
+      internalID: 1266385432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_20
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1729
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de30aac9826162d4ea2c3b6d8e9cd884
+      internalID: 1511082575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_21
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 1729
+        width: 76
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d313fa5c19864042b0c6876771ceff3
+      internalID: -1215270460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_22
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1726
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3abad38545dd824f901765c60ca1352
+      internalID: -94006620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_23
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 1729
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e78f6a556ebcf4aa014c5e72e56209
+      internalID: 849630280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_24
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1729
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f70be5de5b798d45bb1db0a93914172
+      internalID: 546328774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_25
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1728
+        width: 110
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d3a2cb72db9e748bdf0899297223f2
+      internalID: -1443608265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_26
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1704
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0856d99976df54444885f467ac8cde6a
+      internalID: 45334777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_27
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1694
+        width: 42
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeab14dad1674674d96cb8a958f5bee4
+      internalID: 1258733459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_28
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1693
+        width: 60
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9feb12b72e25a0f46982f5f30b88f2a0
+      internalID: -2042592615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_29
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 1693
+        width: 36
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a3112e195a668429e1901c57ac04fb
+      internalID: -737565564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_30
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1687
+        width: 67
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3874f6b9f21474c9d60c0f3df48a9f
+      internalID: -910804645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_31
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1689
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dd9f5aa5803aa4d8c1cf60a39ac3ce
+      internalID: 1130253246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_32
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1692
+        width: 72
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1b8c85fcfe96e42ac4a06adf450cae
+      internalID: 1311211962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_33
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 1692
+        width: 72
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a6f9a337bce2240a1effd443ce4ff4
+      internalID: -847088498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_34
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1646
+        width: 63
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9353f8788077e45b57584b1cef667d
+      internalID: -1815646002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_35
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1653
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452f92a7b743ff44bbb0e922812fc1c0
+      internalID: 2016453744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_36
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1644
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67af5b58f47c1a4cbd9d7ffbd69ce99
+      internalID: 934870093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_37
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1379
+        width: 223
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b091951a623b8468029209e28aa7b4
+      internalID: 246775804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_38
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1598
+        width: 34
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e35788ecc1090140a36d8acf9d71882
+      internalID: -1295944438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_39
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1525
+        width: 93
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9f4cab43c50bf40808d63e9dc73381
+      internalID: 1174680762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_40
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 1525
+        width: 82
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7719b8ce60f8144b41c606c54ca649
+      internalID: 974286733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_41
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1525
+        width: 71
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359cf85819f5dad4cb14160b2be5c54f
+      internalID: 1854039704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_42
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1526
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13084621a2be40b44aadb3f422cc4eb3
+      internalID: 1322860577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_43
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1411
+        width: 124
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2319c2a6cf05f1c4d92ddf1117d9fa10
+      internalID: -908912906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_44
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1480
+        width: 38
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac98ca1f324f2c479b27619eda000be
+      internalID: -779460497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_45
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1291
+        width: 264
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc89058c453b6248a886022956f8444
+      internalID: -677790309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_46
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1368
+        width: 69
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c841b34e16c694384084195d371ff3
+      internalID: -508231898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_47
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1368
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c21d14e35e40647b92be957b186c42
+      internalID: -488337972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_48
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1368
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae93c7188c14f2246ac60376c72f327d
+      internalID: -2140972600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_49
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 1362
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2849645c75f1aeb48972fd20c038f44b
+      internalID: -98079695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_50
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1369
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f6f7affef89ab4cbedd0cf1e77a541
+      internalID: -396684113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_51
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1362
+        width: 48
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c58deca105dd74d80a3a706134d820
+      internalID: 642728256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_52
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1385
+        width: 31
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1191a858d5e671745b0a77a2736a485d
+      internalID: 1491433350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_53
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1309
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bac6aadf6deffe4e86ca47e37992e2d
+      internalID: 763228146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_54
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1318
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf28740102f660141b3ea24ac1d7d71e
+      internalID: -1230531723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_55
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1149
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254c3cd95a509494c93295018742225f
+      internalID: 636948267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_56
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1143
+        width: 296
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec765962caddaa44bafc8a9bfc0d419e
+      internalID: 1413277738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_57
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1313
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfab1590b9365b4ab36ee8af6f099df
+      internalID: 2032245925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_58
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 1315
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7445c68afd51c7e44b12cb65fc07c4c2
+      internalID: -1920531825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_59
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1263
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3e674d835aab646833451a9c075bae
+      internalID: 1595555056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_60
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1206
+        width: 36
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a0766f4eca0754a8bfdb2ba7f73de3
+      internalID: -1138537149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_61
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1281
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123d052ac1a819c468e734afbfdbf8e0
+      internalID: -1176325564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_62
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1246
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75794e14cb47114ab9c5a9f89073711
+      internalID: 678467161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_63
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 1181
+        width: 32
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347373c85c1b75d458bab2e663971858
+      internalID: -603756411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_64
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1260
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf2d98a03f4d1ba4caa085e02a27c160
+      internalID: 2041037714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_65
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1232
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65611b0ad9360c1459da8e54a4f97783
+      internalID: -2062696192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_66
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1237
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407f048839288e445aacd77d145b0ff6
+      internalID: -2086068857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_67
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1236
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd62a2feb6406e4aa0a12a9370e3012
+      internalID: -333908589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_68
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1229
+        width: 49
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7527449a8dd92c94681543551c64a251
+      internalID: 1025962780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_69
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1230
+        width: 51
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d7c032012b36741ac926d8218d4a2d
+      internalID: -1987910806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_70
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1221
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89404212bb27e5d4396fccbebfb30d27
+      internalID: 1453569119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_71
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1249
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafe25d12482556489920b19d2443ecb
+      internalID: 2124615836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_72
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1240
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12423d8ad30054438eda8f8ef2015f0
+      internalID: 1437183261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_73
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1253
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0944946e5336f594193af6e6b8e102a6
+      internalID: 537113595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_74
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1197
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b4923c93ffd0040b72d1da5d0bda7a
+      internalID: 1408929216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_75
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1201
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d1a077855b6cb4bba250e48f546c1c
+      internalID: -1828395512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_76
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1201
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c961b99227871d418598bb5272f28d7
+      internalID: -1721133240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_77
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1195
+        width: 53
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb39fe8127eddf429d3a4c2609e78b2
+      internalID: -1762514279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_78
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1162
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09e4e875b6b2c840ac5fd8fb0aab353
+      internalID: -491943977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_79
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1206
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fbe4e3e99e94a49acdff5ec3f9cfe1
+      internalID: -1387260000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_80
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1189
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508450b2c96029540835abc94717b457
+      internalID: -495194735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_81
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1156
+        width: 33
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7932db2ec89e1d64f9720f216d6cabaa
+      internalID: 313103042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_82
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1152
+        width: 99
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f74bf35cd417f49a066e21f05f64ef
+      internalID: 1124248687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_83
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1161
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abb8a48fc3e6ce4998200bfc226807d
+      internalID: -372663518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_84
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1112
+        width: 28
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b09f3ffa7576f43927bd4b16af16d8
+      internalID: 1035264649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_85
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 934
+        width: 188
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6993d43b0e5c3e84cac73f949bd5ce02
+      internalID: 701102587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_86
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1117
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3bd8c04ad87bb4eaefaa481539463c
+      internalID: -503479635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_87
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1082
+        width: 26
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4947494092b72640adba8c04283bb04
+      internalID: 115648616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_88
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1054
+        width: 27
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ed37afd6ac4df46866dbc9c686ebc6
+      internalID: 1299082412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_89
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1111
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5b04a70d9341448af315db0b2f8a72
+      internalID: -1862427811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_90
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1035
+        width: 28
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fac7d73398df0247ad17e048551546a
+      internalID: 745858145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_91
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1047
+        width: 39
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6244601b09bffab418451274c73d9f9e
+      internalID: -1067584185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_92
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1028
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1086c7c6233ee41af94ebd9adca8e8
+      internalID: -1630958297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_93
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 953
+        width: 178
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a319075fc2667ec4596a8136ae376801
+      internalID: 1396821725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_94
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 957
+        width: 41
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db2adbf9fc333d4f820dc30b59f9510
+      internalID: 846519103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_95
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1079
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831a909ab95a8e64db6f4324090f6c3c
+      internalID: -1103617534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_96
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 981
+        width: 31
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0940cb99a32d1fb49a9975413e586194
+      internalID: 1551501100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_97
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 986
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ef670f6f04b5c4994c440528e1d890
+      internalID: -1277579868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_98
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 933
+        width: 192
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00aeb47cb112a543b7a3b4ba1a27389
+      internalID: -1913517106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_99
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1009
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9b1763733ccf344970b5a7beedf6cc
+      internalID: -2119734870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_100
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 965
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a409378f50988478c5c1635981eeda
+      internalID: -1043800054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_101
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1005
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eab1027f1da0164ea13b721bfac236d
+      internalID: 1310898021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_102
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 931
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369a901afdd79174bbb641383a721dd2
+      internalID: -28584508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_103
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 956
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a36a84a7c6f3094faec09f23d9292d0
+      internalID: -536319056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_104
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 925
+        width: 37
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58c31ac348eb3f4489a570e29f67fb9
+      internalID: 2038095830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_105
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 903
+        width: 26
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d405aa99f87554188e71a614930f4f
+      internalID: 1860639350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_106
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 950
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cc194dc989b544a85b5baec1b2290b
+      internalID: -680069643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_107
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 902
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34834c6f0b8d3241905b60a8ecc7d9b
+      internalID: -13173563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_108
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 870
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb75b91ac98179c46998e3c7009d9dde
+      internalID: 1090340494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_109
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 920
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfc99a6d46d5cb4aaa0a27823837d37
+      internalID: 255907795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_110
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 878
+        width: 70
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8918ea68f382e35459f03506c431ea23
+      internalID: 599115322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_111
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 878
+        width: 47
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f147d60ac86ef246bd903df996410d7
+      internalID: 654281845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_112
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 878
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c8049dd0b27394c9d32e9cfdda6cd2
+      internalID: 1830066436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_113
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 878
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9986ff4676fb5489983961e1d37516
+      internalID: 277603066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_114
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 878
+        width: 76
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2078b487fcaafb543a5972a5f3dfd085
+      internalID: 704383861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_115
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 872
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa1560d300f67b49b5c74e832d551b4
+      internalID: 1542261040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_116
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 816
+        width: 27
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de122c31e8725be49b008b769d773ae0
+      internalID: -370083037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_117
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 669
+        width: 156
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642682494e3516142b10e46ecb03fd3d
+      internalID: -1162332628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_118
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 773
+        width: 39
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630d1ddffca13ed498c48dd496b430b3
+      internalID: -1832287155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_119
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 837
+        width: 82
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc270695468d004cbe0c77a3e0c6879
+      internalID: 938878472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_120
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 837
+        width: 155
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8a1b2c09d9dfd48b73a99e6eef5d26
+      internalID: -356723073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_121
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 778
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac6998f69d965a49a538de2d4d9f8ea
+      internalID: 579041015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_122
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 797
+        width: 27
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c98aa4b5cef9947b368ba5247a631c
+      internalID: 288258137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_123
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 654
+        width: 233
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff687b361e48fb45ad8a54f64ebf16d
+      internalID: 28204723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_124
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 751
+        width: 39
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4e9bb2ad6f70e4d9ee10647edc258a
+      internalID: 437723270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_125
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 804
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860d8a47ea5ad2e4686db03ba25c14bc
+      internalID: -424500958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_126
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 795
+        width: 63
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a40913ee92a6b4c8c348b2b84c218f
+      internalID: 1832719969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_127
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 802
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beed8bee9375cd94d88091f9d69878df
+      internalID: -553151398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_128
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 802
+        width: 99
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80e846f14da4bf43bc775b8146f151a
+      internalID: 790940864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_129
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 806
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b370226ee38b0c14cbf78f4290f31120
+      internalID: 253095732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_130
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 767
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a9f916a3f46cd4bb0c4578f791b7b5
+      internalID: -31945386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_131
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 561
+        width: 110
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0973a8a4736216d4bbdb87b91d877b54
+      internalID: -814172463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_132
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 695
+        width: 37
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c0b01529875bc49bbb9e427740cfa1
+      internalID: 783915581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_133
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 748
+        width: 29
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dccda51f2fb19a4e84396b59ce9970d
+      internalID: 1527940219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_134
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 724
+        width: 27
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4359b6d5d4f601a4b979e5f8bac49fd0
+      internalID: -2090177571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_135
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 712
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57203d2113472c46a057cc0264ff736
+      internalID: -337515090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_136
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 687
+        width: 34
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba2e13abc4dbb941a4ed2c7b75f6542
+      internalID: 1942651862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_137
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 693
+        width: 26
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65166105008e8274bade32be9565d26c
+      internalID: -78902960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_138
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 665
+        width: 34
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726024ad81d6a7c4b8f99c4689cf9cd3
+      internalID: -618160892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_139
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 682
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6513bcfab54715b43be7cf13737dc2f1
+      internalID: -1933559555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_140
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 663
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b622134c2a58bd409e41f9e55ae4309
+      internalID: 601820028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_141
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 592
+        width: 267
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fceb92f4ec5cab49990f0e563782d29
+      internalID: 199034074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_142
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 400
+        width: 75
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac1e3a56b3662543b0899dec081068d
+      internalID: -2017520526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_143
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 577
+        width: 267
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff57eda1a494bc42b2c6cdb9330c311
+      internalID: 1035913554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_144
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 609
+        width: 39
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd9f47bab3eda54e8c2de62e2472b8d
+      internalID: -1762189592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_145
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 519
+        width: 70
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6613e4af30df7324a896076e5121a5cf
+      internalID: 843164658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_146
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 519
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69376c1a28ca5f4fb924a6c02601e6e
+      internalID: 603351757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_147
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 519
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dabe8fabcf6c69d4c858e2451cbee8f7
+      internalID: 698378584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_148
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 513
+        width: 51
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b9cfd5b5e860f43996367bacbec0a3
+      internalID: -501248323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_149
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 520
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ed4db09cfc0f940aa01376de1c53ca
+      internalID: -1434790992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_150
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 291
+        width: 166
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e5de71089ccd9408c54b08a923fce7
+      internalID: 439014451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_151
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 308
+        width: 75
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684e154108d9ced48910851852c91d4b
+      internalID: -448175693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_152
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 398
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689b7ad2241641b4da3813568b4e318e
+      internalID: 593806277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_153
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 412
+        width: 178
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd03da94e33d99479fb06670ac5035b
+      internalID: -1692501238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_154
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 477
+        width: 57
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c995483fc533ec4cbbf4775de7946c4
+      internalID: 266203786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_155
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 476
+        width: 115
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7961fdc6c96953f419cf3a750e09fd85
+      internalID: -1310534542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_156
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 484
+        width: 88
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18997833819c54844a22b089114e3236
+      internalID: -808651744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_157
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 437
+        width: 30
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daeb920d098e6954b9050d00cb41eca3
+      internalID: -726389702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_158
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 433
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48052a7a0f9505b428af2fc788e7f99d
+      internalID: 791475190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_159
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 442
+        width: 70
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f42d842f7d5ed46a8f4cd60482a527
+      internalID: -532518679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_160
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 208
+        width: 196
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4416613a849f94f98a3a3e7de8fc0c
+      internalID: -1078958469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_161
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 361
+        width: 30
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc423357ef13755448ae813604afd3d0
+      internalID: 259925923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_162
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 296
+        width: 220
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f6d3b3ad20347458d06b603848903f
+      internalID: -2110268306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_163
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 307
+        width: 116
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d257d99ef21ce0f41841955fec8fc2cf
+      internalID: -1901494483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_164
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 306
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea083e78270f0484c8f261df39077354
+      internalID: 765498987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_165
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 258
+        width: 68
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138c3732a6b06e54e95f94872d55369c
+      internalID: -941328797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_166
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 251
+        width: 93
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067e30038d5d103469bd3e8f1e4d9b64
+      internalID: 2056526615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_167
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 219
+        width: 267
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d921af16cfd55141aac8fe38c627e30
+      internalID: 1441966647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_168
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 201
+        width: 99
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c57fa925d09ac46a10c18fe33c48a3
+      internalID: 1282909056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_169
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 275
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e706884657eaee34488d0db58ac2a7cb
+      internalID: 1743737471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_170
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 159
+        width: 70
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcec53fb975de6d4a9f67b504c053802
+      internalID: -1697029242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_171
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 159
+        width: 47
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd05117555af8b54c9d1d84c5d9bf2bb
+      internalID: 1428465663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_172
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 159
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62b0250abc27e54f85ce6455e706caa
+      internalID: 867117533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_173
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 159
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67762611325860d42bc278e101d8c902
+      internalID: 232006175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_174
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 154
+        width: 61
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f782cf591923d434cbed3f4b68317454
+      internalID: -1122230264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_175
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 90
+        width: 255
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcf5748152b3c54d99e5902d43a8ea5
+      internalID: 690616563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_176
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 142
+        width: 267
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1879660ba30e15d4295bfd01e2a074a9
+      internalID: 1612906411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_177
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 170
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ca8f6ffdffee346ab187fb537c9cd0
+      internalID: -810572976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_178
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 117
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c511053dd0ce5c45968c14b99a90dbd
+      internalID: 9076633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_179
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 123
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef420631c02a19e4a896e6a9e196b837
+      internalID: 1055042646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_180
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 125
+        width: 45
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e3c5cbc226c1649a86b4f74c08f985
+      internalID: 823903139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_181
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 117
+        width: 116
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac2a2e439e7bdf43874853969eb8619
+      internalID: 102790830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_182
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 65
+        width: 267
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d79a24a4ceaab042b6cf2ac0b0c5044
+      internalID: 270414765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_183
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 40
+        width: 267
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1445d177c2e449e47adb76e0627349cd
+      internalID: -1423570204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_184
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 13
+        width: 267
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99316afc6cb6fc46a065f2672c788fb
+      internalID: -33284407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_185
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 34
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec197ef3fff34d4428261a88e84c6fa1
+      internalID: -204414843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LW3_MainMenuShop-hd_186
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656c16e95e0ef184098261429ca77db8
+      internalID: 645646058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 349e36c2fb65d2543adb45dcba3aaff8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LW3_MainMenuShop-hd_0: -1214075317
+      LW3_MainMenuShop-hd_1: 1153441568
+      LW3_MainMenuShop-hd_10: -636569998
+      LW3_MainMenuShop-hd_100: -1043800054
+      LW3_MainMenuShop-hd_101: 1310898021
+      LW3_MainMenuShop-hd_102: -28584508
+      LW3_MainMenuShop-hd_103: -536319056
+      LW3_MainMenuShop-hd_104: 2038095830
+      LW3_MainMenuShop-hd_105: 1860639350
+      LW3_MainMenuShop-hd_106: -680069643
+      LW3_MainMenuShop-hd_107: -13173563
+      LW3_MainMenuShop-hd_108: 1090340494
+      LW3_MainMenuShop-hd_109: 255907795
+      LW3_MainMenuShop-hd_11: -74353451
+      LW3_MainMenuShop-hd_110: 599115322
+      LW3_MainMenuShop-hd_111: 654281845
+      LW3_MainMenuShop-hd_112: 1830066436
+      LW3_MainMenuShop-hd_113: 277603066
+      LW3_MainMenuShop-hd_114: 704383861
+      LW3_MainMenuShop-hd_115: 1542261040
+      LW3_MainMenuShop-hd_116: -370083037
+      LW3_MainMenuShop-hd_117: -1162332628
+      LW3_MainMenuShop-hd_118: -1832287155
+      LW3_MainMenuShop-hd_119: 938878472
+      LW3_MainMenuShop-hd_12: 1242293822
+      LW3_MainMenuShop-hd_120: -356723073
+      LW3_MainMenuShop-hd_121: 579041015
+      LW3_MainMenuShop-hd_122: 288258137
+      LW3_MainMenuShop-hd_123: 28204723
+      LW3_MainMenuShop-hd_124: 437723270
+      LW3_MainMenuShop-hd_125: -424500958
+      LW3_MainMenuShop-hd_126: 1832719969
+      LW3_MainMenuShop-hd_127: -553151398
+      LW3_MainMenuShop-hd_128: 790940864
+      LW3_MainMenuShop-hd_129: 253095732
+      LW3_MainMenuShop-hd_13: 1526301324
+      LW3_MainMenuShop-hd_130: -31945386
+      LW3_MainMenuShop-hd_131: -814172463
+      LW3_MainMenuShop-hd_132: 783915581
+      LW3_MainMenuShop-hd_133: 1527940219
+      LW3_MainMenuShop-hd_134: -2090177571
+      LW3_MainMenuShop-hd_135: -337515090
+      LW3_MainMenuShop-hd_136: 1942651862
+      LW3_MainMenuShop-hd_137: -78902960
+      LW3_MainMenuShop-hd_138: -618160892
+      LW3_MainMenuShop-hd_139: -1933559555
+      LW3_MainMenuShop-hd_14: 1881281023
+      LW3_MainMenuShop-hd_140: 601820028
+      LW3_MainMenuShop-hd_141: 199034074
+      LW3_MainMenuShop-hd_142: -2017520526
+      LW3_MainMenuShop-hd_143: 1035913554
+      LW3_MainMenuShop-hd_144: -1762189592
+      LW3_MainMenuShop-hd_145: 843164658
+      LW3_MainMenuShop-hd_146: 603351757
+      LW3_MainMenuShop-hd_147: 698378584
+      LW3_MainMenuShop-hd_148: -501248323
+      LW3_MainMenuShop-hd_149: -1434790992
+      LW3_MainMenuShop-hd_15: 1718894994
+      LW3_MainMenuShop-hd_150: 439014451
+      LW3_MainMenuShop-hd_151: -448175693
+      LW3_MainMenuShop-hd_152: 593806277
+      LW3_MainMenuShop-hd_153: -1692501238
+      LW3_MainMenuShop-hd_154: 266203786
+      LW3_MainMenuShop-hd_155: -1310534542
+      LW3_MainMenuShop-hd_156: -808651744
+      LW3_MainMenuShop-hd_157: -726389702
+      LW3_MainMenuShop-hd_158: 791475190
+      LW3_MainMenuShop-hd_159: -532518679
+      LW3_MainMenuShop-hd_16: 1103854912
+      LW3_MainMenuShop-hd_160: -1078958469
+      LW3_MainMenuShop-hd_161: 259925923
+      LW3_MainMenuShop-hd_162: -2110268306
+      LW3_MainMenuShop-hd_163: -1901494483
+      LW3_MainMenuShop-hd_164: 765498987
+      LW3_MainMenuShop-hd_165: -941328797
+      LW3_MainMenuShop-hd_166: 2056526615
+      LW3_MainMenuShop-hd_167: 1441966647
+      LW3_MainMenuShop-hd_168: 1282909056
+      LW3_MainMenuShop-hd_169: 1743737471
+      LW3_MainMenuShop-hd_17: 994602268
+      LW3_MainMenuShop-hd_170: -1697029242
+      LW3_MainMenuShop-hd_171: 1428465663
+      LW3_MainMenuShop-hd_172: 867117533
+      LW3_MainMenuShop-hd_173: 232006175
+      LW3_MainMenuShop-hd_174: -1122230264
+      LW3_MainMenuShop-hd_175: 690616563
+      LW3_MainMenuShop-hd_176: 1612906411
+      LW3_MainMenuShop-hd_177: -810572976
+      LW3_MainMenuShop-hd_178: 9076633
+      LW3_MainMenuShop-hd_179: 1055042646
+      LW3_MainMenuShop-hd_18: -1430260816
+      LW3_MainMenuShop-hd_180: 823903139
+      LW3_MainMenuShop-hd_181: 102790830
+      LW3_MainMenuShop-hd_182: 270414765
+      LW3_MainMenuShop-hd_183: -1423570204
+      LW3_MainMenuShop-hd_184: -33284407
+      LW3_MainMenuShop-hd_185: -204414843
+      LW3_MainMenuShop-hd_186: 645646058
+      LW3_MainMenuShop-hd_19: 1266385432
+      LW3_MainMenuShop-hd_2: 413994658
+      LW3_MainMenuShop-hd_20: 1511082575
+      LW3_MainMenuShop-hd_21: -1215270460
+      LW3_MainMenuShop-hd_22: -94006620
+      LW3_MainMenuShop-hd_23: 849630280
+      LW3_MainMenuShop-hd_24: 546328774
+      LW3_MainMenuShop-hd_25: -1443608265
+      LW3_MainMenuShop-hd_26: 45334777
+      LW3_MainMenuShop-hd_27: 1258733459
+      LW3_MainMenuShop-hd_28: -2042592615
+      LW3_MainMenuShop-hd_29: -737565564
+      LW3_MainMenuShop-hd_3: -1713864577
+      LW3_MainMenuShop-hd_30: -910804645
+      LW3_MainMenuShop-hd_31: 1130253246
+      LW3_MainMenuShop-hd_32: 1311211962
+      LW3_MainMenuShop-hd_33: -847088498
+      LW3_MainMenuShop-hd_34: -1815646002
+      LW3_MainMenuShop-hd_35: 2016453744
+      LW3_MainMenuShop-hd_36: 934870093
+      LW3_MainMenuShop-hd_37: 246775804
+      LW3_MainMenuShop-hd_38: -1295944438
+      LW3_MainMenuShop-hd_39: 1174680762
+      LW3_MainMenuShop-hd_4: -11487881
+      LW3_MainMenuShop-hd_40: 974286733
+      LW3_MainMenuShop-hd_41: 1854039704
+      LW3_MainMenuShop-hd_42: 1322860577
+      LW3_MainMenuShop-hd_43: -908912906
+      LW3_MainMenuShop-hd_44: -779460497
+      LW3_MainMenuShop-hd_45: -677790309
+      LW3_MainMenuShop-hd_46: -508231898
+      LW3_MainMenuShop-hd_47: -488337972
+      LW3_MainMenuShop-hd_48: -2140972600
+      LW3_MainMenuShop-hd_49: -98079695
+      LW3_MainMenuShop-hd_5: 2010164204
+      LW3_MainMenuShop-hd_50: -396684113
+      LW3_MainMenuShop-hd_51: 642728256
+      LW3_MainMenuShop-hd_52: 1491433350
+      LW3_MainMenuShop-hd_53: 763228146
+      LW3_MainMenuShop-hd_54: -1230531723
+      LW3_MainMenuShop-hd_55: 636948267
+      LW3_MainMenuShop-hd_56: 1413277738
+      LW3_MainMenuShop-hd_57: 2032245925
+      LW3_MainMenuShop-hd_58: -1920531825
+      LW3_MainMenuShop-hd_59: 1595555056
+      LW3_MainMenuShop-hd_6: -112082632
+      LW3_MainMenuShop-hd_60: -1138537149
+      LW3_MainMenuShop-hd_61: -1176325564
+      LW3_MainMenuShop-hd_62: 678467161
+      LW3_MainMenuShop-hd_63: -603756411
+      LW3_MainMenuShop-hd_64: 2041037714
+      LW3_MainMenuShop-hd_65: -2062696192
+      LW3_MainMenuShop-hd_66: -2086068857
+      LW3_MainMenuShop-hd_67: -333908589
+      LW3_MainMenuShop-hd_68: 1025962780
+      LW3_MainMenuShop-hd_69: -1987910806
+      LW3_MainMenuShop-hd_7: -1930942832
+      LW3_MainMenuShop-hd_70: 1453569119
+      LW3_MainMenuShop-hd_71: 2124615836
+      LW3_MainMenuShop-hd_72: 1437183261
+      LW3_MainMenuShop-hd_73: 537113595
+      LW3_MainMenuShop-hd_74: 1408929216
+      LW3_MainMenuShop-hd_75: -1828395512
+      LW3_MainMenuShop-hd_76: -1721133240
+      LW3_MainMenuShop-hd_77: -1762514279
+      LW3_MainMenuShop-hd_78: -491943977
+      LW3_MainMenuShop-hd_79: -1387260000
+      LW3_MainMenuShop-hd_8: -631545512
+      LW3_MainMenuShop-hd_80: -495194735
+      LW3_MainMenuShop-hd_81: 313103042
+      LW3_MainMenuShop-hd_82: 1124248687
+      LW3_MainMenuShop-hd_83: -372663518
+      LW3_MainMenuShop-hd_84: 1035264649
+      LW3_MainMenuShop-hd_85: 701102587
+      LW3_MainMenuShop-hd_86: -503479635
+      LW3_MainMenuShop-hd_87: 115648616
+      LW3_MainMenuShop-hd_88: 1299082412
+      LW3_MainMenuShop-hd_89: -1862427811
+      LW3_MainMenuShop-hd_9: -1751177931
+      LW3_MainMenuShop-hd_90: 745858145
+      LW3_MainMenuShop-hd_91: -1067584185
+      LW3_MainMenuShop-hd_92: -1630958297
+      LW3_MainMenuShop-hd_93: 1396821725
+      LW3_MainMenuShop-hd_94: 846519103
+      LW3_MainMenuShop-hd_95: -1103617534
+      LW3_MainMenuShop-hd_96: 1551501100
+      LW3_MainMenuShop-hd_97: -1277579868
+      LW3_MainMenuShop-hd_98: -1913517106
+      LW3_MainMenuShop-hd_99: -2119734870
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

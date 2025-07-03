@@ -1,9 +1,7 @@
 ﻿using UnityEngine;
 
-public class MiniBossFollow : MonoBehaviour
+public class MiniBossFollow : Enemy // Kế thừa từ Enemy
 {
-    public Transform player;
-    public float moveSpeed = 2f;
     public float stopDistance = 0.5f;
     public float attackDelay = 1.2f;
 
@@ -14,40 +12,28 @@ public class MiniBossFollow : MonoBehaviour
     private int attackCounter = 0;
     private float lastAttackTime;
 
-    [HideInInspector] public bool isInAttackRange = false; // dùng để kiểm tra trigger
+    [HideInInspector] public bool isInAttackRange = false;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start(); // Gọi Start của Enemy (setup máu, player,...)
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
-
-        if (player == null)
-        {
-            GameObject foundPlayer = GameObject.FindGameObjectWithTag("Player");
-            if (foundPlayer != null)
-                player = foundPlayer.transform;
-        }
     }
 
-    private void Update()
+    protected override void Update()
     {
+        base.Update(); // Gọi logic di chuyển và flip từ Enemy
+
         if (player == null) return;
 
-        Vector2 direction = (player.position - transform.position).normalized;
-
-        // Flip hướng
-        if (spriteRenderer != null)
-            spriteRenderer.flipX = direction.x < 0;
-
-        // Di chuyển
-        float distance = Vector2.Distance(transform.position, player.position);
+        float distance = Vector2.Distance(transform.position, player.transform.position);
         if (distance > stopDistance)
         {
-            transform.position += (Vector3)(direction * moveSpeed * Time.deltaTime);
+            // Di chuyển đã xử lý trong base.Update()
         }
 
-        // Tấn công theo combo nếu đang được phép
         if (isInAttackRange && Time.time >= lastAttackTime + attackDelay)
         {
             if (attackCounter < 2)

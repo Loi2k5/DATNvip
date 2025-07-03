@@ -878,10 +878,14 @@ PrefabInstance:
     - target: {fileID: 2706439196850468549, guid: bb076e4c6045f28428d77e1c4fe08507, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 502826069}
+      objectReference: {fileID: 0}
     - target: {fileID: 3050334889738062380, guid: bb076e4c6045f28428d77e1c4fe08507, type: 3}
       propertyPath: m_Name
       value: Wooden Aarakocra
+      objectReference: {fileID: 0}
+    - target: {fileID: 4857506784969462553, guid: bb076e4c6045f28428d77e1c4fe08507, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6308658754858474383, guid: bb076e4c6045f28428d77e1c4fe08507, type: 3}
       propertyPath: m_LocalPosition.x
@@ -922,6 +926,10 @@ PrefabInstance:
     - target: {fileID: 6308658754858474383, guid: bb076e4c6045f28428d77e1c4fe08507, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6353239804448771848, guid: bb076e4c6045f28428d77e1c4fe08507, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

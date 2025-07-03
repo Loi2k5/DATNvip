@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: f354e3c17707db1499b35dc25f56fb37
-DefaultImporter:
+guid: 6e2b2983f31f23641887c85fa749226f
+NativeFormatImporter:
   externalObjects: {}
+  mainObjectFileID: 7400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -10,5 +11,5 @@ AssetOrigin:
   productId: 195719
   packageName: Bringer Of Death (free)
   packageVersion: 1.0
-  assetPath: Assets/Bringer Of Death/Demo.unity
+  assetPath: Assets/Xuan/Bringer Of Death/Animation/Walk.anim
   uploadId: 434405

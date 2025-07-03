@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1192ecea3d3a5994ead9ced2fbd0726b
+guid: c99207e72a7f9ac4a983bc66ea077909
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 195719
   packageName: Bringer Of Death (free)
   packageVersion: 1.0
-  assetPath: Assets/Bringer Of Death/Animation/Hurt.anim
+  assetPath: Assets/Xuan/Bringer Of Death/Animation/Attack.anim
   uploadId: 434405

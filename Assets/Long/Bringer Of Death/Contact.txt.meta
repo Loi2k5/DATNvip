@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 77f24c31ef7c68f47a8a77b5bd7314c9
-NativeFormatImporter:
+guid: bfa165e13990ab5448be3340f6e77bcd
+TextScriptImporter:
   externalObjects: {}
-  mainObjectFileID: 7400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 195719
   packageName: Bringer Of Death (free)
   packageVersion: 1.0
-  assetPath: Assets/Bringer Of Death/Animation/Spell.anim
+  assetPath: Assets/Xuan/Bringer Of Death/Contact.txt
   uploadId: 434405

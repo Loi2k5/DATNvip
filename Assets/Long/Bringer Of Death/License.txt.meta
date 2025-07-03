@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 0f76ac1f09bc9f742833832c81be85a0
-NativeFormatImporter:
+guid: 32b8dbc0fde0ff54e8e13fb613007eac
+TextScriptImporter:
   externalObjects: {}
-  mainObjectFileID: 7400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 195719
   packageName: Bringer Of Death (free)
   packageVersion: 1.0
-  assetPath: Assets/Bringer Of Death/Animation/Attack-NoEffect.anim
+  assetPath: Assets/Xuan/Bringer Of Death/License.txt
   uploadId: 434405

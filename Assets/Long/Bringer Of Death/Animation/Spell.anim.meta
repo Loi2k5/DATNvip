@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7ab3e66d872f3704092617677c4a1dc6
+guid: 77f24c31ef7c68f47a8a77b5bd7314c9
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000
@@ -11,5 +11,5 @@ AssetOrigin:
   productId: 195719
   packageName: Bringer Of Death (free)
   packageVersion: 1.0
-  assetPath: Assets/Bringer Of Death/Animation/Cast-NoEffect.anim
+  assetPath: Assets/Xuan/Bringer Of Death/Animation/Spell.anim
   uploadId: 434405

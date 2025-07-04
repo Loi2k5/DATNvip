@@ -12,7 +12,11 @@ TagManager:
   - Usb
   - Pet
   - Ground
-  - miniboss
+  - BossSword
+  - FireBallDragonBall
+  - FxTemporaire
+  - FireWall
+  - DragonBoss
   layers:
   - Default
   - TransparentFX
@@ -91,9 +95,6 @@ TagManager:
     locked: 0
   - name: Pet
     uniqueID: 1393253965
-    locked: 0
-  - name: miniboss
-    uniqueID: 598697959
     locked: 0
   m_RenderingLayers:
   - Default

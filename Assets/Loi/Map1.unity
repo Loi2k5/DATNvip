@@ -12811,7 +12811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &811940220
 RectTransform:
   m_ObjectHideFlags: 0
@@ -97806,7 +97806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc82ac4e5bb6c30468f3ecc79042d73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyThreshold: 1
+  energyThreshold: 10
   energyBar: {fileID: 683881561}
   skillUpgradeUI: {fileID: 1019624607}
   pointText: {fileID: 630560127}
@@ -97825,7 +97825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1923575732}
-  timeRemaining: 120
+  timeRemaining: 60
   bossPrefab: {fileID: 3587406611441781429, guid: 6a73f0f206ba73a42b28c024aad61196, type: 3}
   bossSpawnPoint: {fileID: 578027324}
   enemySpawner: {fileID: 1662865379}
@@ -106799,7 +106799,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1662865380
 MonoBehaviour:
   m_ObjectHideFlags: 0

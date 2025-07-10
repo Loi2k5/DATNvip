@@ -17,6 +17,7 @@ TagManager:
   - FxTemporaire
   - FireWall
   - DragonBoss
+  - Trap
   layers:
   - Default
   - TransparentFX

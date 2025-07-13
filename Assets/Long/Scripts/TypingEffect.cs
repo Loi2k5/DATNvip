@@ -1,6 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class TypingEffect : MonoBehaviour
 {
@@ -8,9 +9,12 @@ public class TypingEffect : MonoBehaviour
     [TextArea(5, 20)] public string fullText;
     public float typingSpeed = 0.04f;
 
+    public GameObject storyImage; // ← Thêm dòng này
+
     private void Start()
     {
         targetText.text = "";
+        storyImage.SetActive(false); // ← Ẩn ảnh ban đầu
         StartCoroutine(TypeText());
     }
 
@@ -18,10 +22,17 @@ public class TypingEffect : MonoBehaviour
     {
         string current = "";
 
-        foreach (char c in fullText)
+        for (int i = 0; i < fullText.Length; i++)
         {
-            current += c;
+            current += fullText[i];
             targetText.text = current;
+
+            // Sau khi chạy được 100 ký tự thì hiện ảnh minh họa
+            if (i == 100)
+            {
+                storyImage.SetActive(true);
+            }
+
             yield return new WaitForSeconds(typingSpeed);
         }
     }

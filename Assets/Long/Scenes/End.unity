@@ -148,9 +148,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52129cd8321230f4c8771f0dabb909ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetText: {fileID: 0}
-  fullText: 
+  targetText: {fileID: 828040284}
+  fullText: "Cu\u1ED1i c\xF9ng, sau h\xE0nh tr\xECnh d\xE0i \u0111\u1EA7y m\xE1u
+    v\xE0 n\u01B0\u1EDBc m\u1EAFt, Shin \u0111\xE3 \u0111\u1EB7t ch\xE2n \u0111\u1EBFn
+    trung t\xE2m c\u0103n c\u1EE9 c\u1EE7a b\u1ECDn qu\xE1i v\u1EADt.\r\n\r\nV\u1EDBi
+    c\xFA b\u1EAFn cu\u1ED1i c\xF9ng, con tr\xF9m \u0111\u1EA7u s\u1ECF g\u1EE5c
+    xu\u1ED1ng.\r\n\r\nNgay l\xFAc \u0111\xF3, c\xE1nh c\u1EEDa ph\xF2ng giam m\u1EDF
+    ra. B\u1ED1 v\xE0 m\u1EB9 c\u1EADu nh\u1EEFng nh\xE0 khoa h\u1ECDc v\u0129 \u0111\u1EA1i
+    lao \u0111\u1EBFn \xF4m c\u1EADu th\u1EADt ch\u1EB7t.\r\n\r\nKh\u1ED1i l\u1EADp
+    ph\u01B0\u01A1ng ph\xE1t s\xE1ng r\u1EF1c r\u1EE1, l\u1EA7n \u0111\u1EA7u ti\xEAn
+    h\xE9 l\u1ED9 b\xED m\u1EADt: n\xF3 ch\xEDnh l\xE0 ch\xECa kh\xF3a k\xEDch ho\u1EA1t
+    b\u1EA3n thi\u1EBFt k\u1EBF v\u0169 kh\xED t\u1ED1i th\u01B0\u1EE3ng m\xE0 b\u1ED1
+    m\u1EB9 c\u1EADu t\u1EEBng gi\u1EA5u k\xEDn.\r\n\r\nC\u1EADu \u0111\xE3 b\u1EA3o
+    v\u1EC7 \u0111\u01B0\u1EE3c n\xF3, \u0111\xFAng nh\u01B0 l\u1EDDi d\u1EB7n n\u0103m
+    x\u01B0a.\r\n\r\nD\u01B0\u1EDBi s\u1EF1 d\u1EABn d\u1EAFt c\u1EE7a Shin, con
+    ng\u01B0\u1EDDi \u0111\xE3 ph\u1EE5c h\u1ED3i b\u1EA3n thi\u1EBFt k\u1EBF, t\xE1i
+    x\xE2y d\u1EF1ng th\u1EBF gi\u1EDBi v\xE0 \u0111\xE1nh \u0111u\u1ED5i l\u0169
+    qu\xE1i v\u1EADt c\xF2n s\xF3t l\u1EA1i.\r\n\r\nH\xF2a b\xECnh quay tr\u1EDF
+    l\u1EA1i... nh\u01B0ng \u0111\xE2u \u0111\xF3 trong b\xF3ng t\u1ED1i, m\u1ED9t
+    th\u1EBF l\u1EF1c kh\xE1c \u0111ang tr\u1ED7i d\u1EADy.\r\n"
   typingSpeed: 0.04
+  storyImage: {fileID: 650891870}
 --- !u!4 &133652325
 Transform:
   m_ObjectHideFlags: 0
@@ -179,7 +197,7 @@ GameObject:
   - component: {fileID: 557762482}
   - component: {fileID: 557762481}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: StoryText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -261,6 +279,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 828040283}
+  - {fileID: 650891873}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -268,6 +287,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &650891870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 650891873}
+  - component: {fileID: 650891872}
+  - component: {fileID: 650891871}
+  m_Layer: 5
+  m_Name: BackgroundImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &650891871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650891870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -2754087495853805588, guid: c1b76472f292aa8478607733f7360b62, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &650891872
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650891870}
+  m_CullTransparentMesh: 1
+--- !u!224 &650891873
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650891870}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 557762484}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.005004883, y: -0.0025024414}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &828040282
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +396,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 709, y: -161}
+  m_AnchoredPosition: {x: 712, y: -161}
   m_SizeDelta: {x: 304.0119, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &828040284
@@ -511,6 +605,7 @@ GameObject:
   - component: {fileID: 1031388683}
   - component: {fileID: 1031388682}
   - component: {fileID: 1031388681}
+  - component: {fileID: 1031388684}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -592,6 +687,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1031388684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031388680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

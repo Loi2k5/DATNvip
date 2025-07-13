@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 68c8028dee18dc146babcb3523e18332
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5519553164026047711
+    second: Pixel Gates_0
+  - first:
+      213: 5922872013767913481
+    second: Pixel Gates_1
+  - first:
+      213: 1059450251487280466
+    second: Pixel Gates_2
+  - first:
+      213: 3453459577352634532
+    second: Pixel Gates_3
+  - first:
+      213: 8300423238084987586
+    second: Pixel Gates_4
+  - first:
+      213: 4693712537887903947
+    second: Pixel Gates_5
+  - first:
+      213: -8696790686463492214
+    second: Pixel Gates_6
+  - first:
+      213: -6959213348236175004
+    second: Pixel Gates_7
+  - first:
+      213: 2888811330412173330
+    second: Pixel Gates_8
+  - first:
+      213: 7050527906491276571
+    second: Pixel Gates_9
+  - first:
+      213: -5792284702659884568
+    second: Pixel Gates_10
+  - first:
+      213: 5175539260582251080
+    second: Pixel Gates_11
+  - first:
+      213: -4240623169973456551
+    second: Pixel Gates_12
+  - first:
+      213: -3159508751491001214
+    second: Pixel Gates_13
+  - first:
+      213: -4683782736709959272
+    second: Pixel Gates_14
+  - first:
+      213: 4181486822313876648
+    second: Pixel Gates_15
+  - first:
+      213: -8614093641838357690
+    second: Pixel Gates_16
+  - first:
+      213: -8565121218645389844
+    second: Pixel Gates_17
+  - first:
+      213: 7031857424930105970
+    second: Pixel Gates_18
+  - first:
+      213: 1400775126084750203
+    second: Pixel Gates_19
+  - first:
+      213: -4542792172301536760
+    second: Pixel Gates_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pixel Gates_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 402
+        width: 106
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545fce21840ebc74e9d102622378eddb
+      internalID: -537858531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 398
+        width: 106
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b8f51a55f333641ad2c656aa90fe67
+      internalID: -582438773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 398
+        width: 104
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63cb6bf5ee43474a8d1b435705885f4
+      internalID: 687573497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 398
+        width: 103
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f0da4d92910634fa91a81ece577bfc
+      internalID: -1683045409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 398
+        width: 103
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f048e02160cb0a04e93ed34eaa710f8d
+      internalID: -1890283463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 270
+        width: 110
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66c3b482a07e644d80bca4632e5d9ff
+      internalID: 559632876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 270
+        width: 112
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a812e443866d0449e1ab0265d6a8a5
+      internalID: 1407527397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_7
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 270
+        width: 113
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26add9bdd37048e4e983f17d866da33a
+      internalID: 1120683945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_8
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 269
+        width: 118
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714137d58416cea4684ca694f601c02d
+      internalID: 119470690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_9
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 275
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95374cef2e58954489be964ec1fc030
+      internalID: 2127806867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_10
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 269
+        width: 121
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b51646691f8824288d7cfa63da7885
+      internalID: 1477647683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_11
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 136
+        width: 96
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad31de67268a314faab732463e168c8
+      internalID: 1594165929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_12
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 139
+        width: 100
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53705778558f5a14aad43415af64feb4
+      internalID: 1190761820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_13
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 139
+        width: 103
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ced5d6f564a74438912f33bbfb783f
+      internalID: 354727656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_14
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 139
+        width: 95
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5d1c896a928ef47bcc76c8cdaa28fc
+      internalID: -624561860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_15
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 140
+        width: 92
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e123644d2ad8abb42be5bb9574216c4d
+      internalID: 1984843369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_16
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 0
+        width: 105
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2259422546e1c4bae720badea58c45
+      internalID: -1133209282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_17
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 10
+        width: 103
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51323e3db07b3b141a586c2d420bf8b6
+      internalID: -1791540877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_18
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 8
+        width: 104
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c83ff321c022f34ab64eafd318a2b1a
+      internalID: 1494218199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_19
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 10
+        width: 106
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f494af2c5d60a8d488e14163bca69c4e
+      internalID: 618239253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Gates_20
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 13
+        width: 103
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dd364534dc2224098f12adb772eeb6
+      internalID: 1424473450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 34e3bacdb89aa294ca1c2312a0a9d54a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pixel Gates_0: -537858531
+      Pixel Gates_1: -582438773
+      Pixel Gates_10: 1477647683
+      Pixel Gates_11: 1594165929
+      Pixel Gates_12: 1190761820
+      Pixel Gates_13: 354727656
+      Pixel Gates_14: -624561860
+      Pixel Gates_15: 1984843369
+      Pixel Gates_16: -1133209282
+      Pixel Gates_17: -1791540877
+      Pixel Gates_18: 1494218199
+      Pixel Gates_19: 618239253
+      Pixel Gates_2: 687573497
+      Pixel Gates_20: 1424473450
+      Pixel Gates_3: -1683045409
+      Pixel Gates_4: -1890283463
+      Pixel Gates_5: 559632876
+      Pixel Gates_6: 1407527397
+      Pixel Gates_7: 1120683945
+      Pixel Gates_8: 119470690
+      Pixel Gates_9: 2127806867
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

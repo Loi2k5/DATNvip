@@ -12,6 +12,11 @@ TagManager:
   - Usb
   - Pet
   - Ground
+  - BossSword
+  - FireBallDragonBall
+  - FxTemporaire
+  - FireWall
+  - DragonBoss
   layers:
   - Default
   - TransparentFX

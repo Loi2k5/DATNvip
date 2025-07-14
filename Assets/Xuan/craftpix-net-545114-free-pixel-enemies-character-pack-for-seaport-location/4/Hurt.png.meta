@@ -173,8 +173,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD:Assets/Xuan/craftpix-net-545114-free-pixel-enemies-character-pack-for-seaport-location/4/Hurt.png.meta
       Hurt_0: -2048800907179887802
       Hurt_1: 490842205202310979
+=======
+      flame_06_0: 6831663411095022569
+      flame_06_1: -3059688471011793346
+>>>>>>> Chien2:Assets/Chien/kenney_particle-pack/PNG (Transparent)/flame_06.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

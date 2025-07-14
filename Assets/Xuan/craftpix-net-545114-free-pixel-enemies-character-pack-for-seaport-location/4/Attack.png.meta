@@ -360,6 +360,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD:Assets/Xuan/craftpix-net-545114-free-pixel-enemies-character-pack-for-seaport-location/4/Attack.png.meta
       Attack_0: -7008412969330441016
       Attack_1: -7763475090823894447
       Attack_2: 302641331129538988
@@ -370,6 +371,18 @@ TextureImporter:
       Attack_7: 4780903288873104255
       Attack_8: -2238382357930459393
       Attack_9: -297473348006037033
+=======
+      dirt_03_0: -8426780970491567616
+      dirt_03_1: 6068598778204567901
+      dirt_03_2: 6108788240920391718
+      dirt_03_3: -6303262406926332552
+      dirt_03_4: -7582522206593479262
+      dirt_03_5: 390102469598122272
+      dirt_03_6: -7129776124608419860
+      dirt_03_7: 6709364947372640458
+      dirt_03_8: 4556747264361619660
+      dirt_03_9: -5117637423767881225
+>>>>>>> Chien2:Assets/Chien/kenney_particle-pack/PNG (Transparent)/dirt_03.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

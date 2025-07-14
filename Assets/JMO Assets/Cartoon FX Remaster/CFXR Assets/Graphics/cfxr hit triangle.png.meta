@@ -113,7 +113,16 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
+<<<<<<< HEAD:Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr hit triangle.png.meta
   spritePackingTag: 
+=======
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      dirt_03_0: -8426780970491567616
+  mipmapLimitGroupName: 
+>>>>>>> Chien2:Assets/Chien/kenney_particle-pack/PNG (Black background)/dirt_03.png.meta
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData: 

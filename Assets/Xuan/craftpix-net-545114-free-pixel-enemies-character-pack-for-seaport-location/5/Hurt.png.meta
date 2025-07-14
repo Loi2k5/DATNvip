@@ -198,9 +198,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+<<<<<<< HEAD:Assets/Xuan/craftpix-net-545114-free-pixel-enemies-character-pack-for-seaport-location/5/Hurt.png.meta
       Hurt_0: -2048800907179887802
       Hurt_1: 490842205202310979
       Hurt_2: -3720053754089064719
+=======
+      spark_04_0: 5164678972361644163
+      spark_04_1: 2734824172003339901
+      spark_04_2: 5528365918640059383
+>>>>>>> Chien2:Assets/Chien/kenney_particle-pack/PNG (Transparent)/spark_04.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

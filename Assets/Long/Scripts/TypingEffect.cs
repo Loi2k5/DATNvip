@@ -9,12 +9,12 @@ public class TypingEffect : MonoBehaviour
     [TextArea(5, 20)] public string fullText;
     public float typingSpeed = 0.04f;
 
-    public GameObject storyImage; // ← Thêm dòng này
+    public GameObject storyImage; // ← ảnh nền minh họa
 
     private void Start()
     {
         targetText.text = "";
-        storyImage.SetActive(false); // ← Ẩn ảnh ban đầu
+        storyImage.SetActive(true); // ← Cho ảnh hiện ngay từ đầu
         StartCoroutine(TypeText());
     }
 
@@ -26,12 +26,6 @@ public class TypingEffect : MonoBehaviour
         {
             current += fullText[i];
             targetText.text = current;
-
-            // Sau khi chạy được 100 ký tự thì hiện ảnh minh họa
-            if (i == 100)
-            {
-                storyImage.SetActive(true);
-            }
 
             yield return new WaitForSeconds(typingSpeed);
         }

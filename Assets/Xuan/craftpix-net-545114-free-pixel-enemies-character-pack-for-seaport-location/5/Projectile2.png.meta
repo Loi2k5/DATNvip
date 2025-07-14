@@ -223,18 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< HEAD:Assets/Xuan/craftpix-net-545114-free-pixel-enemies-character-pack-for-seaport-location/5/Projectile2.png.meta
       Projectile2_0: 520005141443262910
       Projectile2_1: -86422854529147346
       Projectile2_2: -4035499324863688821
       Projectile2_3: -6592843887357843184
-=======
-      fire_02_0: 163202604323437626
-      fire_02_1: 4672536213492851222
-      fire_02_2: 5868322549951799506
-      fire_02_3: 5541326171448847048
-      fire_02_4: -907143452364069035
->>>>>>> Chien2:Assets/Chien/kenney_particle-pack/PNG (Transparent)/fire_02.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

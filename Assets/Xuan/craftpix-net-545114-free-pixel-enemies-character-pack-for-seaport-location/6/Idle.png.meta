@@ -210,16 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< HEAD:Assets/Xuan/craftpix-net-545114-free-pixel-enemies-character-pack-for-seaport-location/6/Idle.png.meta
       Idle_0: 4723107735738678597
       Idle_1: -7385789195546760866
       Idle_2: 3234629978573100161
       Idle_3: 6373048116405451881
-=======
-      smoke_03_0: 8837609118603321609
-      smoke_03_1: -6224619888917457095
-      smoke_03_2: 4749335409002139054
->>>>>>> Chien2:Assets/Chien/kenney_particle-pack/PNG (Transparent)/smoke_03.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

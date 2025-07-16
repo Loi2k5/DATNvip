@@ -10287,7 +10287,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 675592960281919730, guid: 519542dd3e5800d4882b75221dc550bf, type: 3}
       propertyPath: maxHp
-      value: 500
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 675592960281919730, guid: 519542dd3e5800d4882b75221dc550bf, type: 3}
+      propertyPath: dashTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 675592960281919730, guid: 519542dd3e5800d4882b75221dc550bf, type: 3}
+      propertyPath: dashBoost
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 675592960281919730, guid: 519542dd3e5800d4882b75221dc550bf, type: 3}
       propertyPath: gameManager
@@ -97806,7 +97814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc82ac4e5bb6c30468f3ecc79042d73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyThreshold: 10
+  energyThreshold: 3
   energyBar: {fileID: 683881561}
   skillUpgradeUI: {fileID: 1019624607}
   pointText: {fileID: 630560127}
@@ -97825,7 +97833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1923575732}
-  timeRemaining: 60
+  timeRemaining: 20
   bossPrefab: {fileID: 3587406611441781429, guid: 6a73f0f206ba73a42b28c024aad61196, type: 3}
   bossSpawnPoint: {fileID: 578027324}
   enemySpawner: {fileID: 1662865379}

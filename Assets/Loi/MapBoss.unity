@@ -1029,7 +1029,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &146001313
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1991,6 +1991,7 @@ MonoBehaviour:
   energyBar: {fileID: 475491318}
   skillUpgradeUI: {fileID: 679344816}
   pointText: {fileID: 1809459948}
+  currentPoints: 0
   gameOverMenu: {fileID: 1595330413}
   pauseMenu: {fileID: 1114318830}
 --- !u!4 &280990856
@@ -3673,6 +3674,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 280990854}
+    - target: {fileID: 3757587624193009711, guid: 519542dd3e5800d4882b75221dc550bf, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1371665159}
     - target: {fileID: 7975199035941404953, guid: 519542dd3e5800d4882b75221dc550bf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.99
@@ -4685,7 +4690,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -434138811
-  m_SortingLayer: 5
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 7.1875, y: 6.25, z: 0}
@@ -11639,7 +11644,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.47
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -12540,6 +12545,10 @@ PrefabInstance:
     - target: {fileID: 5280477566692922848, guid: 99818c3a82daf314c90efcd90ca00d91, type: 3}
       propertyPath: m_Name
       value: Pixel Gates
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280477566692922848, guid: 99818c3a82daf314c90efcd90ca00d91, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6002640712144193809, guid: 99818c3a82daf314c90efcd90ca00d91, type: 3}
       propertyPath: m_LocalScale.x

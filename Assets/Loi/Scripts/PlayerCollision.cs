@@ -24,7 +24,7 @@ public class PlayerCollision : MonoBehaviour
                 gameManager.AddEnergy();*/
 
             if (gameManager != null)
-                gameManager.AddPoint(1);
+                PointManager.Instance.AddPoint(1);
             audioManager.PlayEnergySound();
             Destroy(collision.gameObject);
         }

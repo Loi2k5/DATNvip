@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Loi/MapBoss.unity
     guid: e7137f4695453be4fa8c9156b79cb39d
+  - enabled: 1
+    path: Assets/Long/Scenes/End.unity
+    guid: bf2a35427de6fb34a9dcd0369f1d7215
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

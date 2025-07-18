@@ -2,19 +2,40 @@
 
 public class CutsceneTrigger : MonoBehaviour
 {
-    public GameObject momShin;
-    public GameObject dadShin;
-    public DialogueUI dialogueUI;
+    public string message = "Sao giờ này mới đến ";
+    private bool playerInRange = false;
+    private bool hasTriggered = false;
 
-    private bool triggered = false;
+    private DialogueManager dialogueManager;
+
+    void Start()
+    {
+        // Sử dụng cách mới để tránh cảnh báo CS0618
+        dialogueManager = Object.FindFirstObjectByType<DialogueManager>();
+    }
 
     void Update()
     {
-        // Khi cả bố và mẹ đều hiện (hoặc điều kiện riêng của bạn)
-        if (!triggered && momShin.activeInHierarchy && dadShin.activeInHierarchy)
+        if (playerInRange && !hasTriggered && Input.GetKeyDown(KeyCode.E))
         {
-            dialogueUI.ShowDialogue("Shin! Chúng ta là bố mẹ con đây! Tự hào về con!");
-            triggered = true;
+            dialogueManager.ShowDialogue(message);
+            hasTriggered = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInRange = false;
         }
     }
 }

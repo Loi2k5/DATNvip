@@ -1,27 +1,28 @@
+﻿using UnityEngine;
 using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 
-public class DialogueUI : MonoBehaviour
+public class DialogueManager : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText;
-
     public float typingSpeed = 0.05f;
 
-    private string fullText;
     private Coroutine typingCoroutine;
+    private string currentMessage;
+    private bool isTyping = false;
 
     private void Start()
     {
-        dialoguePanel.SetActive(false);
+        if (dialoguePanel != null)
+            dialoguePanel.SetActive(false);
     }
 
     public void ShowDialogue(string message)
     {
         dialoguePanel.SetActive(true);
-        fullText = message;
+        currentMessage = message;
+        dialogueText.text = "";
 
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
@@ -29,18 +30,40 @@ public class DialogueUI : MonoBehaviour
         typingCoroutine = StartCoroutine(TypeText());
     }
 
-    private IEnumerator TypeText()
+    IEnumerator TypeText()
     {
+        isTyping = true;
         dialogueText.text = "";
-        foreach (char c in fullText)
+
+        foreach (char c in currentMessage)
         {
             dialogueText.text += c;
             yield return new WaitForSeconds(typingSpeed);
         }
+
+        isTyping = false;
     }
 
     public void HideDialogue()
     {
+        if (typingCoroutine != null)
+            StopCoroutine(typingCoroutine);
+
         dialoguePanel.SetActive(false);
+        isTyping = false;
+    }
+
+    public bool IsTyping()
+    {
+        return isTyping;
+    }
+
+    public void SkipToFullText()
+    {
+        if (typingCoroutine != null)
+            StopCoroutine(typingCoroutine);
+
+        dialogueText.text = currentMessage;
+        isTyping = false;
     }
 }

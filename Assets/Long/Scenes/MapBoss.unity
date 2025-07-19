@@ -3665,6 +3665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2698778421160674894, guid: 519542dd3e5800d4882b75221dc550bf, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3438742988974918112, guid: 519542dd3e5800d4882b75221dc550bf, type: 3}
       propertyPath: m_Material
       value: 
@@ -3808,6 +3812,7 @@ GameObject:
   - component: {fileID: 497710808}
   - component: {fileID: 497710809}
   - component: {fileID: 497710810}
+  - component: {fileID: 497710811}
   m_Layer: 0
   m_Name: Momshin
   m_TagString: Untagged
@@ -3915,7 +3920,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -3931,6 +3936,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2, y: 3}
   m_EdgeRadius: 0
+--- !u!50 &497710811
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497710807}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &537553576
 GameObject:
   m_ObjectHideFlags: 0
@@ -4835,6 +4867,7 @@ GameObject:
   - component: {fileID: 663953663}
   - component: {fileID: 663953662}
   - component: {fileID: 663953664}
+  - component: {fileID: 663953665}
   m_Layer: 0
   m_Name: Dadshin
   m_TagString: Untagged
@@ -4942,7 +4975,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -4958,6 +4991,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2, y: 3}
   m_EdgeRadius: 0
+--- !u!50 &663953665
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663953661}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &668106560
 GameObject:
   m_ObjectHideFlags: 0
@@ -7775,9 +7835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2798de62b8f17ff4e943d6e04b94e798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  momShin: {fileID: 497710807}
-  dadShin: {fileID: 663953661}
-  dialogueUI: {fileID: 2043634928}
+  message: "Sao gi\u1EDD n\xE0y m\u1EDBi \u0111\u1EBFn"
 --- !u!4 &1179617691
 Transform:
   m_ObjectHideFlags: 0
@@ -11399,7 +11457,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: '
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12578,6 +12638,7 @@ GameObject:
   - component: {fileID: 1941171954}
   - component: {fileID: 1941171955}
   - component: {fileID: 1941171956}
+  - component: {fileID: 1941171957}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -12615,7 +12676,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shinParents: {fileID: 1941171953}
---- !u!114 &1941171956
+--- !u!61 &1941171956
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941171953}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1941171957
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12624,14 +12731,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1941171953}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 552669a17b9a5a64f8c77d58d40834f7, type: 3}
+  m_Script: {fileID: 11500000, guid: e8ae45b99d0afd248affe0e9d469122e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 632437267}
   dialogueText: {fileID: 1807869966}
-  message: "Shin... Cu\u1ED1i c\xF9ng ch\xFAng ta c\u0169ng g\u1EB7p l\u1EA1i con.
-    B\u1ED1 m\u1EB9 t\u1EF1 h\xE0o v\u1EC1 con h\u01A1n b\u1EA5t c\u1EE9 \u0111i\u1EC1u
-    g\xEC!"
+  message: "Shin! Ch\xFAng ta l\xE0 b\u1ED1 m\u1EB9 con \u0111\xE2y!"
 --- !u!1 &1943927808
 GameObject:
   m_ObjectHideFlags: 0
@@ -13147,7 +13252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2043634929}
-  - component: {fileID: 2043634928}
+  - component: {fileID: 2043634930}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -13155,21 +13260,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2043634928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043634927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 380158b587f9cec4e8dfd2647d13a3cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 632437267}
-  dialogueText: {fileID: 1807869966}
-  typingSpeed: 0.05
 --- !u!4 &2043634929
 Transform:
   m_ObjectHideFlags: 0
@@ -13185,6 +13275,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2043634930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043634927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380158b587f9cec4e8dfd2647d13a3cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialoguePanel: {fileID: 632437267}
+  dialogueText: {fileID: 1807869966}
+  typingSpeed: 0.05
 --- !u!1 &2062704969
 GameObject:
   m_ObjectHideFlags: 0

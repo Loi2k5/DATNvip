@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1462735703839291785}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 18.1, y: -27.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -105,7 +105,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b9d7beb249bd45040ae896a691a51bd6, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -181,8 +181,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  maxHp: 1000
+  maxHp: 2000
   hpBar: {fileID: 1358269913178673038}
+  maxMoveSpeed: 11
+  gameManager: {fileID: 0}
+  dashBoost: 0
+  dashTime: 0
 --- !u!95 &8140207437879495727
 Animator:
   serializedVersion: 7
@@ -667,7 +671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePos: {fileID: 6105497210889442318}
   bulletPrefabs: {fileID: 7513979082045716390, guid: f94e4e10cf976274880f2335c7116242, type: 3}
-  shotDelay: 0.3
+  shotDelay: 0.4
   maxAmmo: 24
   currentAmmo: 0
   armoText: {fileID: 118753678726110304}

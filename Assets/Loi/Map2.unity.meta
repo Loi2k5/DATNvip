@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<<< HEAD:Assets/Hon/prefabss/Enemyy.prefab.meta
 guid: d95f81779c27b594f8408824074db53a
 PrefabImporter:
@@ -6,6 +7,10 @@ PrefabImporter:
 guid: d3c47348637d1434dac7231ef87d1d34
 DefaultImporter:
 >>>>>>>> origin/loibackup:Assets/Loi/Map2.unity.meta
+=======
+guid: d3c47348637d1434dac7231ef87d1d34
+DefaultImporter:
+>>>>>>> long
   externalObjects: {}
   userData: 
   assetBundleName: 

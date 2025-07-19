@@ -87,6 +87,11 @@ public class GameManager : MonoBehaviour
         UpdateUI();
     }
 
+    public int GetCurrentPoints()
+    {
+        return currentPoints;
+    }
+
     private void UpdateUI()
     {
         if (pointText != null)

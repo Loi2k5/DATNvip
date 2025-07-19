@@ -20,6 +20,11 @@ public class Player : MonoBehaviour
     private float fireWallDamageInterval = 1f;
     private float fireWallTimer = 0f;
 
+    public float dashBoost;
+    public float dashTime;
+    private float _dashTime;
+    bool isDashing = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,6 +40,21 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Space) && _dashTime<=0 && isDashing ==false)
+        {
+            moveSpeed += dashBoost;
+            _dashTime = dashTime;
+            isDashing=true;
+        }
+        if(_dashTime <=0 && isDashing ==true)
+        {
+            moveSpeed -= dashBoost;
+            isDashing = false;
+        }
+        else
+        {
+            _dashTime -=Time.deltaTime;
+        }
         if (isDead) return;
 
         MovePlayer();
@@ -111,7 +131,7 @@ public class Player : MonoBehaviour
 
     public void HoiMaul()
     {
-        maxHp = Mathf.Min(maxHp + 300f, 1400f);
+        maxHp = Mathf.Min(maxHp + 300f, 2900f);
         currentHp = maxHp;
         UpdateHpBar();
     }

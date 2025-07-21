@@ -1990,8 +1990,6 @@ MonoBehaviour:
   energyThreshold: 10
   energyBar: {fileID: 475491318}
   skillUpgradeUI: {fileID: 679344816}
-  pointText: {fileID: 1809459948}
-  currentPoints: 0
   gameOverMenu: {fileID: 1595330413}
   pauseMenu: {fileID: 1114318830}
 --- !u!4 &280990856
@@ -10881,7 +10879,7 @@ GameObject:
   - component: {fileID: 1809459947}
   - component: {fileID: 1809459948}
   m_Layer: 5
-  m_Name: Text Point
+  m_Name: PointText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

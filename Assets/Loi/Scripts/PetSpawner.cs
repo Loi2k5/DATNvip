@@ -2,35 +2,34 @@
 
 public class PetSpawner : MonoBehaviour
 {
-    public Transform spawnPoint;
-    public GameObject kikiPrefab;
-    public GameObject samuraiPrefab;
-    public GameObject droneBitPrefab;
+    public GameObject[] petPrefabs;
 
     void Start()
     {
-        /*string selected = GameManager.Instance.SelectedPet;
-        GameObject petToSpawn = null;
+        string selectedPet = PlayerPrefs.GetString("SelectedPet", "");
 
-        switch (selected)
+        if (!string.IsNullOrEmpty(selectedPet))
         {
-            case "KiKi":
-                petToSpawn = kikiPrefab;
-                break;
-            case "Automic Samurai":
-                petToSpawn = samuraiPrefab;
-                break;
-            case "Drone Bit":
-                petToSpawn = droneBitPrefab;
-                break;
-            default:
-                Debug.Log("Chưa chọn pet!");
-                break;
+            GameObject petToSpawn = null;
+
+            foreach (GameObject pet in petPrefabs)
+            {
+                if (pet.name == selectedPet)
+                {
+                    petToSpawn = pet;
+                    break;
+                }
+            }
+
+            if (petToSpawn != null)
+            {
+                Instantiate(petToSpawn, transform.position, Quaternion.identity);
+                Debug.Log("Đã spawn pet: " + selectedPet);
+            }
+            else
+            {
+                Debug.LogWarning("Không tìm thấy pet: " + selectedPet);
+            }
         }
-
-        if (petToSpawn != null)
-        {
-            Instantiate(petToSpawn, spawnPoint.position, Quaternion.identity);
-        }*/
     }
 }

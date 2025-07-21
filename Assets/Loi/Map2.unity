@@ -55670,7 +55670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1090167271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55683,10 +55683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69dabca27922ba742b0c5f75e325287a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 440391202}
-  kikiPrefab: {fileID: 6075645567174146178, guid: ab9e1b0caba530b4686a3d9561b10870, type: 3}
-  samuraiPrefab: {fileID: 1484467894894228618, guid: 3dd34cca31cfee84faa8a8d81e0b9143, type: 3}
-  droneBitPrefab: {fileID: 7110636141942972051, guid: 19742897e75104b44bfb22e517425476, type: 3}
+  petPrefabs:
+  - {fileID: 1484467894894228618, guid: 3dd34cca31cfee84faa8a8d81e0b9143, type: 3}
 --- !u!4 &1090167272
 Transform:
   m_ObjectHideFlags: 0

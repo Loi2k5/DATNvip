@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BossEnemy : Enemy
 {
@@ -11,6 +11,12 @@ public class BossEnemy : Enemy
     [SerializeField] private float skillCooldown = 2f;
     private float nextSkillTime = 0f;
     [SerializeField] private GameObject usbPrefabs;
+    private Animator animator;
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     protected override void Update()
     {
         base.Update();
@@ -29,6 +35,7 @@ public class BossEnemy : Enemy
         if (collision.CompareTag("Player"))
         {
             player.TakeDamage(enterDamage);
+            animator.SetBool("isAttacking", true);
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
@@ -36,6 +43,7 @@ public class BossEnemy : Enemy
         if (collision.CompareTag("Player"))
         {
             player.TakeDamage(stayDamage);
+            animator.SetBool("isAttacking", true);
         }
     }
     private void BanDanThuong()
@@ -104,5 +112,12 @@ public class BossEnemy : Enemy
     {
         nextSkillTime = Time.time + skillCooldown;
         ChonSkillNgauNhien();
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            animator.SetBool("isAttacking", false); // tắt animation khi không còn đụng
+        }
     }
 }

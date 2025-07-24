@@ -29264,11 +29264,9 @@ MonoBehaviour:
   dialoguePanel: {fileID: 663564863}
   dialogueText: {fileID: 950826753}
   storyText: {fileID: 701272691}
-  message: "\"Shin!, con \u0111\xE3 v\u01B0\u1EE3t qua bao gian nan th\u1EED th\xE1ch.
-    B\u1ED1 m\u1EB9 lu\xF4n d\xF5i theo t\u1EEBng b\u01B0\u1EDBc ch\xE2n c\u1EE7a
-    con v\xE0 h\xF4m nay, ch\xFAng ta t\u1EF1 h\xE0o khi th\u1EA5y con tr\u1EDF th\xE0nh
-    m\u1ED9t ng\u01B0\u1EDDi m\u1EA1nh m\u1EBD v\xE0 can \u0111\u1EA3m!\"\n\n"
-  typingSpeed: 0.04
+  message: "\"Shin! B\u1ED1 m\u1EB9 t\u1EF1 h\xE0o v\xEC con \u0111\xE3 tr\u01B0\u1EDFng
+    th\xE0nh m\u1EA1nh m\u1EBD sau bao th\u1EED th\xE1ch.\""
+  typingSpeed: 0.01
 --- !u!61 &1760969261
 BoxCollider2D:
   m_ObjectHideFlags: 0

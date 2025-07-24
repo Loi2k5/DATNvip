@@ -107,5 +107,8 @@ TagManager:
   - name: NPC
     uniqueID: 1072232427
     locked: 0
+  - name: Pet Cat
+    uniqueID: 3410656089
+    locked: 0
   m_RenderingLayers:
   - Default

@@ -33,7 +33,8 @@ public class DragonBoss : MonoBehaviour
     public ParticleSystem deadEffect;
     public ParticleSystem bloodEffect;
     public ParticleSystem swordEffect;
-    private bool isDead;
+    [Header("Public để pet kiểm tra")]
+    public bool isDead = false;
 
     public TextMeshProUGUI hpBossText;
     public AudioSource dragonBossAudio;
@@ -44,7 +45,6 @@ public class DragonBoss : MonoBehaviour
     private float fireBallTimer;
 
     public GameObject fireWall;
-
     private bool hasTriggeredFireWall = false;
 
     void Start()
@@ -56,15 +56,16 @@ public class DragonBoss : MonoBehaviour
         fireBallTimer = fireBallCooldown;
     }
 
-    [System.Obsolete]
     void Update()
     {
+        if (isDead) return;
+
         followPlayer();
 
         if (currentHPEnemy <= 100000 && !hasTriggeredFireWall)
         {
             hasTriggeredFireWall = true;
-            fireWall.SetActive(true); // ✅ chỉ bật fireWall, không liên quan camera nữa
+            if (fireWall != null) fireWall.SetActive(true);
         }
 
         if (currentHPEnemy <= 100000)
@@ -79,17 +80,16 @@ public class DragonBoss : MonoBehaviour
         if (currentHPEnemy <= 0)
         {
             dragonBossAudio.Stop();
-            fireWall.SetActive(false);
+            if (fireWall != null) fireWall.SetActive(false);
         }
     }
 
-    void UpdateHP()
+    public void UpdateHP()
     {
         healthSlider.value = (float)currentHPEnemy / maxHP;
         hpBossText.text = $"{currentHPEnemy}/{maxHP}";
     }
 
-    [System.Obsolete]
     private void followPlayer()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, Player.position);
@@ -99,12 +99,9 @@ public class DragonBoss : MonoBehaviour
             if (distanceToPlayer > stopRange)
             {
                 Vector2 direction = (Player.position - transform.position).normalized;
-
-                // ✅ Di chuyển kiểu top-down
-                rb.velocity = direction * 3f;
+                rb.linearVelocity = direction * 3f;
                 animator.SetBool("IsRunning", true);
 
-                // ✅ Flip trái/phải theo hướng X (không xoay người nữa)
                 if ((direction.x < 0 && right) || (direction.x > 0 && !right))
                 {
                     right = !right;
@@ -115,13 +112,13 @@ public class DragonBoss : MonoBehaviour
             }
             else
             {
-                rb.velocity = Vector2.zero;
+                rb.linearVelocity = Vector2.zero;
                 animator.SetBool("IsRunning", false);
             }
         }
         else
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
             animator.SetBool("IsRunning", false);
         }
     }
@@ -143,11 +140,10 @@ public class DragonBoss : MonoBehaviour
         }
         else
         {
-            animator.SetBool("IsIdiel", true);
+            animator.SetBool("IsIdle", true); // sửa chính tả: IsIdiel → IsIdle
         }
     }
 
-    [System.Obsolete]
     void FlameAttack()
     {
         float distanceToPlayer = Vector3.Distance(transform.position, Player.position);
@@ -161,24 +157,17 @@ public class DragonBoss : MonoBehaviour
                 var fireBall = Instantiate(fireBallPrefab, firePoint.position, Quaternion.identity);
 
                 Vector2 direction = (Player.position - firePoint.position).normalized;
-                fireBall.GetComponent<Rigidbody2D>().velocity = direction * fireBallSpeed;
+                fireBall.GetComponent<Rigidbody2D>().linearVelocity = direction * fireBallSpeed;
 
-                // Flip hướng FireBall
-                if (direction.x < 0)
-                {
-                    fireBall.transform.localScale = new Vector3(-1, 1, 1);
-                }
-                else
-                {
-                    fireBall.transform.localScale = new Vector3(1, 1, 1);
-                }
+                // Flip fireball
+                fireBall.transform.localScale = new Vector3(direction.x < 0 ? -1 : 1, 1, 1);
 
                 fireBallTimer = fireBallCooldown;
             }
         }
         else
         {
-            animator.SetBool("IsIdiel2", true);
+            animator.SetBool("IsIdle2", true); // sửa chính tả: IsIdiel2 → IsIdle2
         }
     }
 
@@ -186,25 +175,43 @@ public class DragonBoss : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PlayerBullet"))
         {
-            currentHPEnemy -= 2000;
-            if (currentHPEnemy < 0) currentHPEnemy = 0;
-            swordEffect.Play();
-            UpdateHP();
-
-            if (currentHPEnemy <= 0 && !isDead)
-            {
-                StartCoroutine(DeadEffect());
-            }
+            TakeDamage(2000);
         }
+    }
+
+    public void TakeDamage(int amount)
+    {
+        if (isDead) return;
+
+        currentHPEnemy -= amount;
+        if (currentHPEnemy < 0) currentHPEnemy = 0;
+
+        swordEffect.Play();
+        UpdateHP();
+
+        if (currentHPEnemy <= 0 && !isDead)
+        {
+            StartCoroutine(DeadEffect());
+        }
+
+        Debug.Log("🔥 Boss bị mất máu! Còn lại: " + currentHPEnemy);
     }
 
     private IEnumerator DeadEffect()
     {
         isDead = true;
+        rb.linearVelocity = Vector2.zero;
+        animator.SetTrigger("Die");
         deadEffect.Play();
         bloodEffect.Play();
-        yield return new WaitForSeconds(1f);
-        portalEnd.SetActive(true);
+
+        yield return new WaitForSeconds(1.5f); // đủ thời gian cho animation
+
+        if (portalEnd != null)
+        {
+            portalEnd.SetActive(true);
+        }
+
         Destroy(gameObject);
     }
 }

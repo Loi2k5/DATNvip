@@ -205,4 +205,4 @@ MonoBehaviour:
   attackRange: 1
   detectionRange: 10
   petAttackDamage: 10
-  attackCooldown: 1.5
+  attackCooldown: 1

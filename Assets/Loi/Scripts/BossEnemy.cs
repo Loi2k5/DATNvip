@@ -12,6 +12,7 @@ public class BossEnemy : Enemy
     private float nextSkillTime = 0f;
     [SerializeField] private GameObject usbPrefabs;
     private Animator animator;
+   
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -27,6 +28,10 @@ public class BossEnemy : Enemy
     }
     protected override void Die()
     {
+        if (CountdownTimer.Instance != null)
+        {
+            CountdownTimer.Instance.OnBossDeath();
+        }
         Instantiate(usbPrefabs, transform.position, Quaternion.identity);
         base.Die();
     }

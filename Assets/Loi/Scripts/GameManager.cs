@@ -11,17 +11,36 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private Image energyBar;
     [SerializeField] private GameObject skillUpgradeUI;
-    [SerializeField] private TextMeshProUGUI pointText;
+    //[SerializeField] private TextMeshProUGUI pointText;
 
-    private int currentPoints = 0;//diem nang luong mua pet
 
     private bool skillUIShown = false;
     [SerializeField] private GameObject gameOverMenu;
     [SerializeField] private GameObject pauseMenu;
 
-    void Start()
+    /*public static GameManager Instance;
+    public string SelectedPet { get; private set; }
+    public int CurrentPoints => currentPoints;
+*/
+
+
+
+    /*void Awake()
     {
-        UpdateUI();
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject); // Đảm bảo chỉ có 1 GameManager duy nhất
+        }
+    }*/
+
+
+    void Start()
+    {      
         currentEnergy = 0;
         skillUIShown = false;  
         gameOverMenu.SetActive(false); pauseMenu.SetActive(false);
@@ -39,7 +58,7 @@ public class GameManager : MonoBehaviour
         if (skillUIShown || currentEnergy >= energyThreshold)
             return;
 
-        currentEnergy++;
+        currentEnergy++;      
         UpdateEnergyBar();
 
         if (currentEnergy >= energyThreshold)
@@ -81,24 +100,7 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale = 1f; // CHẠY LẠI GAME
     }
-    public void AddPoint(int amount)
-    {
-        currentPoints += amount;
-        UpdateUI();
-    }
 
-    public int GetCurrentPoints()
-    {
-        return currentPoints;
-    }
-
-    private void UpdateUI()
-    {
-        if (pointText != null)
-        {
-            pointText.text = $" {currentPoints}";
-        }
-    }
     public void GameOverMenu()
     {
         Debug.Log("GameOverMenu được gọi");
@@ -131,5 +133,46 @@ public class GameManager : MonoBehaviour
     public void ContinuesGame()
     {
         ResumeGame();
-    }    
+    }
+    /*public void SelectPet(string petName)
+    {
+        SelectedPet = petName;
+        Debug.Log("Đã chọn pet: " + petName);
+    }
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        string[] gameplayScenes = { "Map1", "Map2", "MapBoss" };
+
+        if (System.Array.Exists(gameplayScenes, name => name == scene.name))
+        {
+            // 🔁 Tìm lại UI từ scene mới (vì scene cũ không còn)
+            gameOverMenu = GameObject.Find("GameOverMenu");
+            pauseMenu = GameObject.Find("PauseMenu");
+            skillUpgradeUI = GameObject.Find("SkillUpgradeUI");
+
+            // Nếu bạn có TextMeshProUGUI pointText:
+            GameObject pointObj = GameObject.Find("PointText");
+            if (pointObj != null)
+                pointText = pointObj.GetComponent<TextMeshProUGUI>();
+
+            // Sau đó mới gọi SetActive(false)
+            if (gameOverMenu != null) gameOverMenu.SetActive(false);
+            if (pauseMenu != null) pauseMenu.SetActive(false);
+            if (skillUpgradeUI != null) skillUpgradeUI.SetActive(false);
+        }
+
+        Time.timeScale = 1f;
+    }*/
+
+
 }

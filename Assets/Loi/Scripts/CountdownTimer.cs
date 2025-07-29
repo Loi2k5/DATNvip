@@ -11,6 +11,26 @@ public class CountdownTimer : MonoBehaviour
     public GameObject bossPrefab;
     public Transform bossSpawnPoint;
     public GameObject enemySpawner; // script hoặc object điều khiển spawn quái
+    [SerializeField] private GameObject red;
+    public static CountdownTimer Instance { get; private set; }
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    // ... phần còn lại giữ nguyên
+
+    public void OnBossDeath()
+    {
+        if (red != null)
+        {
+            red.SetActive(false);
+        }
+    }
+    private void Start()
+    {
+        red.SetActive(false);
+    }
 
     void Update()
     {
@@ -48,6 +68,7 @@ public class CountdownTimer : MonoBehaviour
         if (bossPrefab != null && bossSpawnPoint != null)
         {
             Instantiate(bossPrefab, bossSpawnPoint.position, Quaternion.identity);
+            red.SetActive(true);
         }
     }
 }

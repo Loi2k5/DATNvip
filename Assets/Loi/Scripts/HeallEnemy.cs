@@ -1,8 +1,14 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class HeallEnemy : Enemy
 {
     [SerializeField] private float healValue = 20f;
+    private Animator animator;
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -10,6 +16,7 @@ public class HeallEnemy : Enemy
             if (player != null)
             {
                 player.TakeDamage(enterDamage);
+                animator.SetBool("isAttacking", true);
             }
         }
     }
@@ -20,6 +27,7 @@ public class HeallEnemy : Enemy
             if (player != null)
             {
                 player.TakeDamage(stayDamage);
+                animator.SetBool("isAttacking", true);
             }
         }
     }
@@ -33,6 +41,13 @@ public class HeallEnemy : Enemy
         if (player != null)
         {
             player.Heal(healValue);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            animator.SetBool("isAttacking", false); // tắt animation khi không còn đụng
         }
     }
 }

@@ -2395,6 +2395,7 @@ GameObject:
   - component: {fileID: 1203313542}
   - component: {fileID: 1203313541}
   - component: {fileID: 1203313540}
+  - component: {fileID: 1203313543}
   m_Layer: 5
   m_Name: Button Buy
   m_TagString: Untagged
@@ -2516,6 +2517,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203313538}
   m_CullTransparentMesh: 1
+--- !u!114 &1203313543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203313538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0e81c5a92a8284cb71bfc0cb3d0e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  petID: Maybay
+  cost: 1
+  buyButton: {fileID: 1203313540}
+  nameText: {fileID: 1015861227}
 --- !u!1 &1254908743
 GameObject:
   m_ObjectHideFlags: 0
@@ -3357,6 +3374,7 @@ GameObject:
   - component: {fileID: 1552850669}
   - component: {fileID: 1552850668}
   - component: {fileID: 1552850667}
+  - component: {fileID: 1552850670}
   m_Layer: 5
   m_Name: Button Buy
   m_TagString: Untagged
@@ -3427,19 +3445,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1552850668}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1617799197}
-        m_TargetAssemblyTypeName: NewSceneCotroller, Assembly-CSharp
-        m_MethodName: MuaPet
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1552850668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3478,6 +3484,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552850665}
   m_CullTransparentMesh: 1
+--- !u!114 &1552850670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552850665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0e81c5a92a8284cb71bfc0cb3d0e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  petID: AtomicSamurai
+  cost: 1
+  buyButton: {fileID: 1552850667}
+  nameText: {fileID: 824468512}
 --- !u!1 &1562204340
 GameObject:
   m_ObjectHideFlags: 0
@@ -4510,6 +4532,7 @@ GameObject:
   - component: {fileID: 1929474050}
   - component: {fileID: 1929474049}
   - component: {fileID: 1929474048}
+  - component: {fileID: 1929474051}
   m_Layer: 5
   m_Name: Button Buy
   m_TagString: Untagged
@@ -4631,6 +4654,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929474046}
   m_CullTransparentMesh: 1
+--- !u!114 &1929474051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929474046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf0e81c5a92a8284cb71bfc0cb3d0e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  petID: IronDog
+  cost: 1
+  buyButton: {fileID: 1929474048}
+  nameText: {fileID: 2050083406}
 --- !u!1 &1984662256
 GameObject:
   m_ObjectHideFlags: 0
@@ -5349,6 +5388,7 @@ MonoBehaviour:
   bossPrefab: {fileID: 3587406611441781429, guid: 6a73f0f206ba73a42b28c024aad61196, type: 3}
   bossSpawnPoint: {fileID: 0}
   enemySpawner: {fileID: 0}
+  red: {fileID: 0}
 --- !u!114 &2133105799
 MonoBehaviour:
   m_ObjectHideFlags: 0

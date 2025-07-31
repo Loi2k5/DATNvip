@@ -13405,6 +13405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!95 &859853075
 Animator:
   serializedVersion: 7
@@ -13442,6 +13443,10 @@ MonoBehaviour:
   moveSpeed: 5
   maxHp: 1000
   hpBar: {fileID: 121123061}
+  maxMoveSpeed: 10
+  gameManager: {fileID: 0}
+  dashBoost: 0
+  dashTime: 0
 --- !u!50 &859853077
 Rigidbody2D:
   serializedVersion: 5
@@ -13766,10 +13771,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   energyThreshold: 3
-  boss: {fileID: 305487075}
-  enemySpawner: {fileID: 575997020}
   energyBar: {fileID: 1856896796}
-  gameUI: {fileID: 2052451142}
+  skillUpgradeUI: {fileID: 0}
+  pointText: {fileID: 0}
+  gameOverMenu: {fileID: 0}
+  pauseMenu: {fileID: 0}
 --- !u!4 &957577002
 Transform:
   m_ObjectHideFlags: 0
@@ -108300,6 +108306,7 @@ MonoBehaviour:
   maxAmmo: 24
   currentAmmo: 0
   armoText: {fileID: 1859172441}
+  audioManager: {fileID: 0}
 --- !u!212 &1883437657
 SpriteRenderer:
   m_ObjectHideFlags: 0

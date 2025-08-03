@@ -18,6 +18,7 @@ TagManager:
   - FireWall
   - DragonBoss
   - Trap
+  - Background
   layers:
   - Default
   - TransparentFX
@@ -26,8 +27,8 @@ TagManager:
   - Water
   - UI
   - EnemyLayer
-  - 
-  - 
+  - ground
+  - background
   - 
   - 
   - 
@@ -54,6 +55,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 1673011793
     locked: 0
   - name: Ground
     uniqueID: 607402853

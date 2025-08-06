@@ -1,14 +1,8 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public class EnergyEnemy : Enemy
 {
     [SerializeField] private GameObject energyObject;
-    private Animator animator;
-    private void Awake()
-    {
-        animator = GetComponent<Animator>();
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -16,7 +10,6 @@ public class EnergyEnemy : Enemy
             if (player != null)
             {
                 player.TakeDamage(enterDamage);
-                animator.SetBool("isAttacking", true);
             }
         }
     }
@@ -27,7 +20,6 @@ public class EnergyEnemy : Enemy
             if (player != null)
             {
                 player.TakeDamage(stayDamage);
-                animator.SetBool("isAttacking", true);
             }
         }
     }
@@ -39,12 +31,5 @@ public class EnergyEnemy : Enemy
             Destroy(energy, 5f);
         }
         base.Die();
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            animator.SetBool("isAttacking", false); // tắt animation khi không còn đụng
-        }
     }
 }

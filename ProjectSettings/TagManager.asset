@@ -18,11 +18,8 @@ TagManager:
   - FireWall
   - DragonBoss
   - Trap
-<<<<<<< HEAD
   - Background
-=======
-  - miniboss
->>>>>>> parent of b458f9248 (Merge remote-tracking branch 'origin/loibackup' into long)
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -33,7 +30,7 @@ TagManager:
   - EnemyLayer
   - ground
   - background
-  - 
+  - NPC
   - 
   - 
   - 
@@ -112,10 +109,7 @@ TagManager:
     uniqueID: 1393253965
     locked: 0
   - name: NPC
-    uniqueID: 1072232427
-    locked: 0
-  - name: Pet Cat
-    uniqueID: 3410656089
+    uniqueID: 3701183067
     locked: 0
   m_RenderingLayers:
   - Default

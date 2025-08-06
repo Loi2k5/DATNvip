@@ -267,9 +267,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1072232427
-  m_SortingLayer: 17
-  m_SortingOrder: 0
+  m_SortingLayerID: -593784229
+  m_SortingLayer: 18
+  m_SortingOrder: 10
   m_Sprite: {fileID: 1762414380184659407, guid: 6eedc78c635734143a7981e2f563c86b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -356,7 +356,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -434138811
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.5625, y: 1.4375, z: 0}
@@ -1177,7 +1177,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 607402853
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -25488,7 +25488,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -825240795
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -28851,7 +28851,7 @@ GameObject:
   - component: {fileID: 1535246068}
   m_Layer: 0
   m_Name: Momshin
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28865,7 +28865,7 @@ Transform:
   m_GameObject: {fileID: 1535246066}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8993416, y: 0.715333, z: 0.059292022}
+  m_LocalPosition: {x: -0.46, y: 0.66, z: 0.059292022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28985,8 +28985,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1072232427
-  m_SortingLayer: 17
+  m_SortingLayerID: -593784229
+  m_SortingLayer: 18
   m_SortingOrder: 0
   m_Sprite: {fileID: -3826429871513615880, guid: 1cbba760933726240a53150673e705f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -29266,7 +29266,7 @@ MonoBehaviour:
   storyText: {fileID: 701272691}
   message: "\"Shin! B\u1ED1 m\u1EB9 t\u1EF1 h\xE0o v\xEC con \u0111\xE3 tr\u01B0\u1EDFng
     th\xE0nh m\u1EA1nh m\u1EBD sau bao th\u1EED th\xE1ch.\""
-  typingSpeed: 0.01
+  typingSpeed: 0.1
 --- !u!61 &1760969261
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29335,7 +29335,7 @@ Transform:
   m_GameObject: {fileID: 1760969259}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.21, y: -3.71, z: -0.059292022}
+  m_LocalPosition: {x: -5.21, y: -1.48, z: -0.059292022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

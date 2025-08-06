@@ -148,11 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<< HEAD:Assets/Loi/UI/ground&houses.png.meta
-      ground&houses_0: -3412263911784520926
-=======
       66d78cfb-450f-40c4-989a-0733c4bc2bdc_0: -3107586902255735793
->>>>>>> parent of b458f9248 (Merge remote-tracking branch 'origin/loibackup' into long):Assets/Long/Image/66d78cfb-450f-40c4-989a-0733c4bc2bdc.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

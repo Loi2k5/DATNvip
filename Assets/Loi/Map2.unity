@@ -111707,7 +111707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc82ac4e5bb6c30468f3ecc79042d73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  energyThreshold: 3
+  energyThreshold: 7
   energyBar: {fileID: 1305614168}
   skillUpgradeUI: {fileID: 557808831}
   gameOverMenu: {fileID: 609973686}

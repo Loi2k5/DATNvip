@@ -18,6 +18,7 @@ public class DragonBoss : MonoBehaviour
     private float timeAttack;
 
     public GameObject portalEnd;
+    public GameObject tuong;
     private bool right = true;
 
     public Slider healthSlider;
@@ -203,8 +204,14 @@ public class DragonBoss : MonoBehaviour
         isDead = true;
         deadEffect.Play();
         bloodEffect.Play();
+
+        // Ẩn thanh máu và text máu
+        healthSlider.gameObject.SetActive(false);
+        hpBossText.gameObject.SetActive(false);
+
         yield return new WaitForSeconds(1f);
         portalEnd.SetActive(true);
+        tuong.SetActive(false);
         Destroy(gameObject);
     }
 }

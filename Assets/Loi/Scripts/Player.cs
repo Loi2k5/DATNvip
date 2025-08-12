@@ -25,6 +25,8 @@ public class Player : MonoBehaviour
     private float _dashTime;
     bool isDashing = false;
 
+    public bool canMove = true; // Cho phép di chuyển hay không
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -40,7 +42,8 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && _dashTime<=0 && isDashing ==false)
+        if (!canMove || isDead) return; // Nếu bị khóa thì bỏ qua mọi input
+        if (Input.GetKeyDown(KeyCode.Space) && _dashTime<=0 && isDashing ==false)
         {
             moveSpeed += dashBoost;
             _dashTime = dashTime;
@@ -78,6 +81,7 @@ public class Player : MonoBehaviour
 
     void MovePlayer()
     {
+        if (!canMove) return; // Không cho di chuyển khi bị khóa
         Vector2 playeInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rb.linearVelocity = playeInput.normalized * moveSpeed;
 

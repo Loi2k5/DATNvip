@@ -111194,7 +111194,7 @@ MonoBehaviour:
   loadingUI: {fileID: 1891937744}
   fillImage: {fileID: 1961391794}
   percentText: {fileID: 936664679}
-  loadDuration: 3
+  loadDuration: 1
 --- !u!4 &1848925651
 Transform:
   m_ObjectHideFlags: 0

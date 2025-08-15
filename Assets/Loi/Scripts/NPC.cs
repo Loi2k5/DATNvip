@@ -1,16 +1,20 @@
 ﻿using UnityEngine;
 using TMPro;
 
-public class NPCDialogue : MonoBehaviour
+public class NPC : MonoBehaviour
 {
     public GameObject dialogueUI;
     public TextMeshProUGUI dialogueText;
     [TextArea] public string[] dialogueLines;
     public float typingSpeed = 0.03f;
 
+    public GameObject enemySpawner;
+    public GameObject chatIcon;
+
     private int currentLineIndex = 0;
     private bool isTalking = false;
     private bool isTyping = false;
+    private bool hasTalked = false; // Đánh dấu đã nói chuyện chưa
     private Player player;
 
     void Start()
@@ -20,19 +24,18 @@ public class NPCDialogue : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !isTalking)
+        if (other.CompareTag("Player") && !isTalking && !hasTalked) // Chỉ bắt đầu nếu chưa nói chuyện
         {
             player = other.GetComponent<Player>();
             if (player != null)
             {
-                player.canMove = false; // Khóa điều khiển
-                player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero; // Dừng ngay lập tức
+                player.canMove = false;
+                player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
             }
 
             StartDialogue();
         }
     }
-
 
     void StartDialogue()
     {
@@ -88,11 +91,15 @@ public class NPCDialogue : MonoBehaviour
     {
         dialogueUI.SetActive(false);
         isTalking = false;
+        hasTalked = true; // Đánh dấu đã trò chuyện
 
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; // Dừng trong Editor
-#else
-        Application.Quit(); // Thoát khi build
-#endif
+        if (player != null)
+            player.canMove = true;
+
+        if (enemySpawner != null)
+            enemySpawner.SetActive(true);
+
+        if (chatIcon != null)
+            chatIcon.SetActive(false);
     }
 }

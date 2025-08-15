@@ -2270,6 +2270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0e81c5a92a8284cb71bfc0cb3d0e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  petPrefab: {fileID: 7110636141942972051, guid: 19742897e75104b44bfb22e517425476, type: 3}
   petID: Maybay
   cost: 1
   buyButton: {fileID: 1203313540}
@@ -3101,6 +3102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0e81c5a92a8284cb71bfc0cb3d0e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  petPrefab: {fileID: 1484467894894228618, guid: 3dd34cca31cfee84faa8a8d81e0b9143, type: 3}
   petID: AtomicSamurai
   cost: 1
   buyButton: {fileID: 1552850667}
@@ -4271,6 +4273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0e81c5a92a8284cb71bfc0cb3d0e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  petPrefab: {fileID: 6075645567174146178, guid: ab9e1b0caba530b4686a3d9561b10870, type: 3}
   petID: IronDog
   cost: 1
   buyButton: {fileID: 1929474048}

@@ -4,7 +4,8 @@ using TMPro;
 
 public class ItemShop : MonoBehaviour
 {
-    public string petID; // ID để spawn (tên prefab hoặc key)
+    public GameObject petPrefab;
+    public string petID;
     public int cost = 1;
 
     [SerializeField] private Button buyButton;
@@ -12,8 +13,11 @@ public class ItemShop : MonoBehaviour
 
     void Start()
     {
-        buyButton.onClick.AddListener(OnBuyClicked);
+        if (petPrefab != null) petID = petPrefab.name;
         nameText.text = petID;
+
+        buyButton.onClick.AddListener(OnBuyClicked);
+        buyButton.GetComponentInChildren<TextMeshProUGUI>().text = "Mua (" + cost + ")";
     }
 
     void OnBuyClicked()
@@ -21,13 +25,12 @@ public class ItemShop : MonoBehaviour
         if (PointManager.Instance.CurrentPoints >= cost)
         {
             PointManager.Instance.AddPoint(-cost);
-            PlayerPrefs.SetString("SelectedPet", petID); // Lưu pet đã mua
-            PlayerPrefs.Save();
+            PetPurchaseManager.Instance.AddPet(petID); // thêm vào list tạm thời
             Debug.Log("Mua thành công: " + petID);
         }
         else
         {
-            Debug.Log("Không đủ điểm");
+            Debug.Log("Không đủ điểm để mua: " + petID);
         }
     }
 }

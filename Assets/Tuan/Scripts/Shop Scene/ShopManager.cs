@@ -12,7 +12,7 @@ public class ShopManager : MonoBehaviour
     {
         // Mặc định hiển thị trang 1
         ShowPage1();
-
+        PlayerPrefs.DeleteKey("SelectedPet");
         // Gán sự kiện cho hai nút
         button1.onClick.AddListener(ShowPage1);
         button2.onClick.AddListener(ShowPage2);

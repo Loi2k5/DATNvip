@@ -27,10 +27,15 @@ public class ItemShop : MonoBehaviour
             PointManager.Instance.AddPoint(-cost);
             PetPurchaseManager.Instance.AddPet(petID); // thêm vào list tạm thời
             Debug.Log("Mua thành công: " + petID);
+
+            // đổi text nút thành "Đã mua"
+            buyButton.interactable = false; // khóa nút lại
+            buyButton.GetComponentInChildren<TextMeshProUGUI>().text = "Đã mua";
         }
         else
         {
             Debug.Log("Không đủ điểm để mua: " + petID);
         }
     }
+
 }

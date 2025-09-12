@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -20,10 +21,16 @@ public class Player : MonoBehaviour
     private float fireWallDamageInterval = 1f;
     private float fireWallTimer = 0f;
 
-    public float dashBoost;
-    public float dashTime;
-    private float _dashTime;
-    bool isDashing = false;
+    // --- Dash ---
+    public float dashBoost = 20f;
+    public float dashTime = 0.2f;
+    private float dashTimer;
+    private bool isDashing = false;
+
+    [Header("Dash Cooldown")]
+    public float dashCooldown = 3f; // thời gian hồi chiêu
+    private float cooldownTimer = 0f;
+    public TextMeshProUGUI dashCooldownText;   // UI Text hiển thị cooldown
 
     public bool canMove = true; // Cho phép di chuyển hay không
 
@@ -38,25 +45,29 @@ public class Player : MonoBehaviour
     {
         currentHp = maxHp;
         UpdateHpBar();
+
+        if (dashCooldownText != null)
+            dashCooldownText.gameObject.SetActive(false);
     }
 
     void Update()
     {
         if (!canMove || isDead) return; // Nếu bị khóa thì bỏ qua mọi input
-        if (Input.GetKeyDown(KeyCode.Space) && _dashTime<=0 && isDashing ==false)
+        HandleDash();
+        // Tính toán cooldown dash
+        if (cooldownTimer > 0)
         {
-            moveSpeed += dashBoost;
-            _dashTime = dashTime;
-            isDashing=true;
-        }
-        if(_dashTime <=0 && isDashing ==true)
-        {
-            moveSpeed -= dashBoost;
-            isDashing = false;
+            cooldownTimer -= Time.deltaTime;
+            if (dashCooldownText != null)
+            {
+                dashCooldownText.gameObject.SetActive(true);
+                dashCooldownText.text = Mathf.Ceil(cooldownTimer).ToString();
+            }
         }
         else
         {
-            _dashTime -=Time.deltaTime;
+            if (dashCooldownText != null)
+                dashCooldownText.gameObject.SetActive(false);
         }
         if (isDead) return;
 
@@ -76,6 +87,26 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             gameManager.PauseGameMenu();
+        }
+    }
+    void HandleDash()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && !isDashing && cooldownTimer <= 0)
+        {
+            moveSpeed += dashBoost;
+            dashTimer = dashTime;
+            isDashing = true;
+            cooldownTimer = dashCooldown; // bắt đầu hồi chiêu
+        }
+
+        if (isDashing)
+        {
+            dashTimer -= Time.deltaTime;
+            if (dashTimer <= 0)
+            {
+                moveSpeed -= dashBoost;
+                isDashing = false;
+            }
         }
     }
 
@@ -166,5 +197,18 @@ public class Player : MonoBehaviour
         {
             isInFireWall = false;
         }
+    }
+    // Giảm hồi chiêu dash
+    public void ReduceDashCooldown(float amount)
+    {
+        dashCooldown = Mathf.Max(0.5f, dashCooldown - amount); // giới hạn không < 0.5s
+    }
+
+    // Tăng máu tối đa
+    public void IncreaseMaxHp(float amount)
+    {
+        maxHp += amount;
+        currentHp = maxHp;
+        UpdateHpBar();
     }
 }

@@ -80,7 +80,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1273143639
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: -2274363484027164459, guid: 7f189d98856b89744b097031a33bbcee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -201,7 +201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyMoveSpeed: 1
-  maxHp: 300
+  maxHp: 700
   hpBar: {fileID: 1664646876234366883}
   enterDamage: 10
   stayDamage: 1
@@ -213,7 +213,6 @@ MonoBehaviour:
   miniEnemy: {fileID: 6508353882637499861, guid: c2741be8f23b6164eaf262ca186edff5, type: 3}
   skillCooldown: 2
   usbPrefabs: {fileID: 5280477566692922848, guid: 99818c3a82daf314c90efcd90ca00d91, type: 3}
-  red: {fileID: 0}
 --- !u!1 &7679659803386670097
 GameObject:
   m_ObjectHideFlags: 0

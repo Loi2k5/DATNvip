@@ -82,19 +82,7 @@ public class Gun : MonoBehaviour
             }
         }
     }
-    public void TangTocBan()
-    {
-        if (shotDelay > 0.1f)
-        {
-            shotDelay -= 0.1f;
-            shotDelay = Mathf.Max(shotDelay, 0.1f); // Giới hạn tối thiểu
-            Debug.Log("Tốc độ bắn mới: " + shotDelay);
-        }
-        else
-        {
-            Debug.Log("Đã đạt tốc độ bắn tối đa!");
-        }
-    }
+    
 
 
 

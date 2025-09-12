@@ -6,6 +6,7 @@ public class PlayerBullet : MonoBehaviour
     [SerializeField] private float timeDestroy = 0.5f;
     [SerializeField] private float damage = 10f;
     [SerializeField] GameObject bloodPrefab;
+    [SerializeField] private GameObject damagePopupPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,6 +32,9 @@ public class PlayerBullet : MonoBehaviour
                 enemy.TakeDamage(damage);
                 GameObject blood = Instantiate(bloodPrefab, transform.position, Quaternion.identity);
                 Destroy(blood, 1f);
+                // Spawn damage popup
+                GameObject popup = Instantiate(damagePopupPrefab, collision.transform.position, Quaternion.identity);
+                popup.GetComponent<DamagePopup>().Setup(damage);
             }
             Destroy(gameObject);
         }

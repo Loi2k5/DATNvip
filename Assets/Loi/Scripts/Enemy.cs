@@ -57,4 +57,8 @@ public abstract class Enemy : MonoBehaviour
         hpBar.fillAmount = currentHp / maxHp;
 
     }
+    public void ReduceStayDamage(float amount)
+    {
+        stayDamage = Mathf.Max(0, stayDamage - amount);
+    }
 }

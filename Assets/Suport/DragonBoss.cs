@@ -187,7 +187,7 @@ public class DragonBoss : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PlayerBullet"))
         {
-            currentHPEnemy -= 2000;
+            currentHPEnemy -= 1000;
             if (currentHPEnemy < 0) currentHPEnemy = 0;
             swordEffect.Play();
             UpdateHP();

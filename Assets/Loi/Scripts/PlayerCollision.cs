@@ -4,7 +4,8 @@ public class PlayerCollision : MonoBehaviour
 {
     [SerializeField] private GameManager gameManager; 
     [SerializeField]  private AudioManager audioManager;
-    
+    public QuestManager questManager;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,7 +23,10 @@ public class PlayerCollision : MonoBehaviour
         {
             /*if (gameManager != null)
                 gameManager.AddEnergy();*/
-
+            if (QuestManager.Instance != null && QuestManager.Instance.questAccepted)
+            {
+                QuestManager.Instance.AddEnergy(1);
+            }
             if (gameManager != null)
                 PointManager.Instance.AddPoint(1);
             audioManager.PlayEnergySound();

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8398303724420895577}
   - component: {fileID: 8990927658844046816}
   - component: {fileID: 5231453394625159476}
-  - component: {fileID: 5775608309077952393}
+  - component: {fileID: -4772611386520046052}
   m_Layer: 0
   m_Name: BulletShotgun
   m_TagString: PlayerBullet
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 1284111943
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ca788a4a9f39d754d9518722406c0ff3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 660072b8cb556ab46973fbae6ec931ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,7 +127,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.4, y: 0.2}
+    oldSize: {x: 0.5, y: 0.25}
     newSize: {x: 0.4, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.41256148, y: 0.2}
   m_EdgeRadius: 0
---- !u!114 &5775608309077952393
+--- !u!114 &-4772611386520046052
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,11 +144,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 132745986170169664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76a41342ce1278949b1c15c4b97b853d, type: 3}
+  m_Script: {fileID: 11500000, guid: feb60ed0a10f43440aad46c75a83f49f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 25
+  moveSpeed: 20
   timeDestroy: 0.5
-  damage: 50
-  bloodPrefab: {fileID: 5961960673979325823, guid: 0960f6e8debbf694f87df90dbff7fe61, type: 3}
+  damage: 30
+  flamePrefab: {fileID: 9172880856775460466, guid: 4d7ff2ffddfd5c249ad3da394d0b9c3e, type: 3}
   damagePopupPrefab: {fileID: 5500380624990871429, guid: 9f80d5b96006b4347ab9c2252fb47709, type: 3}

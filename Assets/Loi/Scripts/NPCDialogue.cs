@@ -3,68 +3,69 @@ using TMPro;
 
 public class NPCDialogue : MonoBehaviour
 {
-    public GameObject dialogueUI;
-    public TextMeshProUGUI dialogueText;
-    [TextArea] public string[] dialogueLines;
-    public float typingSpeed = 0.03f;
+    public GameObject dialogueUI;        // UI hội thoại
+    public TextMeshProUGUI dialogueText; // text hiển thị
+    public string[] acceptDialogue;      // thoại khi nhận nhiệm vụ
+    public string[] turnInDialogue;      // thoại khi trả nhiệm vụ
+    public KeyCode interactKey = KeyCode.E;
 
-    private int currentLineIndex = 0;
+    private bool isPlayerInRange = false;
+    private int dialogueIndex = 0;
     private bool isTalking = false;
-    private bool isTyping = false;
-    private Player player;
 
-    void Start()
+    void Update()
     {
-        dialogueUI.SetActive(false);
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player") && !isTalking)
+        if (isPlayerInRange && Input.GetKeyDown(interactKey))
         {
-            player = other.GetComponent<Player>();
-            if (player != null)
-            {
-                player.canMove = false; // Khóa điều khiển
-                player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero; // Dừng ngay lập tức
-            }
-
-            StartDialogue();
+            if (!isTalking) StartDialogue();
+            else NextDialogue();
         }
     }
-
 
     void StartDialogue()
     {
         isTalking = true;
+        dialogueIndex = 0;
         dialogueUI.SetActive(true);
-        currentLineIndex = 0;
-        StartCoroutine(TypeLine());
-    }
 
-    void Update()
-    {
-        if (isTalking && Input.GetKeyDown(KeyCode.Space))
+        Player player = FindObjectOfType<Player>();
+        if (player != null) player.canMove = false;
+
+        // Nếu chưa nhận quest → hiện thoại nhận
+        if (!QuestManager.Instance.questAccepted)
+            dialogueText.text = acceptDialogue[dialogueIndex];
+        // Nếu hoàn thành quest → hiện thoại trả
+        else if (QuestManager.Instance.questCompleted && !QuestManager.Instance.questTurnedIn)
+            dialogueText.text = turnInDialogue[dialogueIndex];
+        else
         {
-            if (isTyping)
-            {
-                StopAllCoroutines();
-                dialogueText.text = dialogueLines[currentLineIndex];
-                isTyping = false;
-            }
-            else
-            {
-                NextLine();
-            }
+            dialogueText.text = "Quay lại khi hoàn thành nhiệm vụ!";
         }
     }
 
-    void NextLine()
+    void NextDialogue()
     {
-        currentLineIndex++;
-        if (currentLineIndex < dialogueLines.Length)
+        dialogueIndex++;
+
+        if (!QuestManager.Instance.questAccepted)
         {
-            StartCoroutine(TypeLine());
+            if (dialogueIndex < acceptDialogue.Length)
+                dialogueText.text = acceptDialogue[dialogueIndex];
+            else
+            {
+                EndDialogue();
+                QuestManager.Instance.AcceptQuest(); // nhận nhiệm vụ
+            }
+        }
+        else if (QuestManager.Instance.questCompleted && !QuestManager.Instance.questTurnedIn)
+        {
+            if (dialogueIndex < turnInDialogue.Length)
+                dialogueText.text = turnInDialogue[dialogueIndex];
+            else
+            {
+                EndDialogue();
+                QuestManager.Instance.TurnInQuest(); // trả nhiệm vụ
+            }
         }
         else
         {
@@ -72,27 +73,28 @@ public class NPCDialogue : MonoBehaviour
         }
     }
 
-    System.Collections.IEnumerator TypeLine()
-    {
-        isTyping = true;
-        dialogueText.text = "";
-        foreach (char c in dialogueLines[currentLineIndex].ToCharArray())
-        {
-            dialogueText.text += c;
-            yield return new WaitForSeconds(typingSpeed);
-        }
-        isTyping = false;
-    }
-
     void EndDialogue()
     {
-        dialogueUI.SetActive(false);
         isTalking = false;
+        dialogueUI.SetActive(false);
 
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false; // Dừng trong Editor
-#else
-        Application.Quit(); // Thoát khi build
-#endif
+        // ✅ Mở lại di chuyển player
+        Player player = FindObjectOfType<Player>();
+        if (player != null) player.canMove = true;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+            isPlayerInRange = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            isPlayerInRange = false;
+            EndDialogue();
+        }
     }
 }

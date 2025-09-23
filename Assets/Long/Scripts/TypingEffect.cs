@@ -1,49 +1,41 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class TypingEffect : MonoBehaviour
 {
-    public TextMeshProUGUI targetText;
-    [TextArea(5, 20)] public string fullText;
-    public float typingSpeed = 0.04f;
+    [Header("UI Component")]
+    public TextMeshProUGUI storyText;   // Gắn TextMeshProUGUI (StoryText)
 
-    public GameObject storyImage; // Ảnh nền minh họa
+    [Header("Story Settings")]
+    [TextArea(5, 15)]
+    public string fullText;             // Nội dung story
+    public float typingSpeed = 0.04f;   // Thời gian delay mỗi ký tự
 
-    private bool isTyping = false;
+    private Coroutine typingCoroutine;
 
-    private void Start()
+    void Start()
     {
-        targetText.text = "";
-        storyImage.SetActive(true); // Cho ảnh hiện ngay từ đầu
-        StartTyping(); // Gọi typing ngay khi bắt đầu
+        // Tự động chạy khi scene bắt đầu
+        PlayStory(fullText);
     }
 
-    public void StartTyping()
+    public void PlayStory(string text)
     {
-        StopAllCoroutines();
-        targetText.text = "";
-        storyImage.SetActive(true);
-        StartCoroutine(TypeText());
-    }
-
-    IEnumerator TypeText()
-    {
-        isTyping = true;
-        string current = "";
-
-        for (int i = 0; i < fullText.Length; i++)
+        if (typingCoroutine != null)
         {
-            current += fullText[i];
-            targetText.text = current;
+            StopCoroutine(typingCoroutine);
+        }
+        typingCoroutine = StartCoroutine(TypeText(text));
+    }
+
+    IEnumerator TypeText(string text)
+    {
+        storyText.text = "";
+        foreach (char c in text)
+        {
+            storyText.text += c;
             yield return new WaitForSeconds(typingSpeed);
         }
-
-        isTyping = false;
-    }
-
-    public bool IsTyping()
-    {
-        return isTyping;
     }
 }

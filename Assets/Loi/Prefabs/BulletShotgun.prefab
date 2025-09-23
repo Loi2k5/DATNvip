@@ -149,6 +149,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 20
   timeDestroy: 0.5
-  damage: 30
+  damage: 40
   flamePrefab: {fileID: 9172880856775460466, guid: 4d7ff2ffddfd5c249ad3da394d0b9c3e, type: 3}
   damagePopupPrefab: {fileID: 5500380624990871429, guid: 9f80d5b96006b4347ab9c2252fb47709, type: 3}

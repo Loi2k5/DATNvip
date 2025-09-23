@@ -31,15 +31,22 @@ public class NPCDialogue : MonoBehaviour
         Player player = FindObjectOfType<Player>();
         if (player != null) player.canMove = false;
 
-        // Nếu chưa nhận quest → hiện thoại nhận
+        // ✅ Hiển thị đúng đoạn thoại đầu tiên theo trạng thái nhiệm vụ
         if (!QuestManager.Instance.questAccepted)
-            dialogueText.text = acceptDialogue[dialogueIndex];
-        // Nếu hoàn thành quest → hiện thoại trả
-        else if (QuestManager.Instance.questCompleted && !QuestManager.Instance.questTurnedIn)
-            dialogueText.text = turnInDialogue[dialogueIndex];
-        else
         {
-            dialogueText.text = "Quay lại khi hoàn thành nhiệm vụ!";
+            dialogueText.text = acceptDialogue.Length > 0 ? acceptDialogue[0] : "Xin chào, hãy nhận nhiệm vụ!";
+        }
+        else if (QuestManager.Instance.questCompleted && !QuestManager.Instance.questTurnedIn)
+        {
+            dialogueText.text = turnInDialogue.Length > 0 ? turnInDialogue[0] : "Cảm ơn, nhiệm vụ hoàn thành!";
+        }
+        else if (QuestManager.Instance.questAccepted && !QuestManager.Instance.questCompleted)
+        {
+            dialogueText.text = "Hãy tiêu diệt và thu thập 20 năng lượng!";
+        }
+        else if (QuestManager.Instance.questTurnedIn)
+        {
+            dialogueText.text = "Cảm ơn, bạn đã giúp tôi xong việc rồi!";
         }
     }
 
@@ -50,25 +57,35 @@ public class NPCDialogue : MonoBehaviour
         if (!QuestManager.Instance.questAccepted)
         {
             if (dialogueIndex < acceptDialogue.Length)
+            {
                 dialogueText.text = acceptDialogue[dialogueIndex];
+            }
             else
             {
+                QuestManager.Instance.AcceptQuest(); // Nhận nhiệm vụ
                 EndDialogue();
-                QuestManager.Instance.AcceptQuest(); // nhận nhiệm vụ
             }
         }
         else if (QuestManager.Instance.questCompleted && !QuestManager.Instance.questTurnedIn)
         {
             if (dialogueIndex < turnInDialogue.Length)
+            {
                 dialogueText.text = turnInDialogue[dialogueIndex];
+            }
             else
             {
+                QuestManager.Instance.TurnInQuest(); // Trả nhiệm vụ
                 EndDialogue();
-                QuestManager.Instance.TurnInQuest(); // trả nhiệm vụ
             }
         }
-        else
+        else if (QuestManager.Instance.questAccepted && !QuestManager.Instance.questCompleted)
         {
+            dialogueText.text = "Quay lại khi hoàn thành nhiệm vụ!";
+            EndDialogue();
+        }
+        else if (QuestManager.Instance.questTurnedIn)
+        {
+            dialogueText.text = "Cảm ơn, bạn đã giúp tôi xong việc rồi!";
             EndDialogue();
         }
     }
@@ -78,7 +95,7 @@ public class NPCDialogue : MonoBehaviour
         isTalking = false;
         dialogueUI.SetActive(false);
 
-        // ✅ Mở lại di chuyển player
+        // ✅ Cho player di chuyển lại
         Player player = FindObjectOfType<Player>();
         if (player != null) player.canMove = true;
     }

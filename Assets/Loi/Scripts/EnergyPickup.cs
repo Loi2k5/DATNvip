@@ -7,7 +7,7 @@ public class EnergyPickup : MonoBehaviour
         if (other.CompareTag("Energy"))
         {
             QuestManager.Instance.AddEnergy(1);
-            
+            Destroy(gameObject);
         }
     }
 }

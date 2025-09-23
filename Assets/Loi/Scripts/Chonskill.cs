@@ -4,6 +4,7 @@ public class Chonskill : MonoBehaviour
 {
     [SerializeField] private Player player;  // tham chiếu tới Player
     public GameObject shieldUI; // Cái "Khien" trong Hierarchy (UI Image)
+    public GameObject shieldVFX;
 
     private WeaponStats GetCurrentWeapon()
     {
@@ -34,7 +35,11 @@ public class Chonskill : MonoBehaviour
         }
 
         if (shieldUI != null)
+        {
             shieldUI.SetActive(true); // bật cái khiên lên
+            shieldVFX.SetActive(true);
+        }    
+            
 
         ClosePanel();
     }

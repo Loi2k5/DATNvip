@@ -212,7 +212,7 @@ MonoBehaviour:
   hpValue: 40
   miniEnemy: {fileID: 6508353882637499861, guid: c2741be8f23b6164eaf262ca186edff5, type: 3}
   skillCooldown: 2
-  usbPrefabs: {fileID: 8713393683017079764, guid: 739fb168115d20e4c92a0506bc6ea18c, type: 3}
+  usbPrefabs: {fileID: 5280477566692922848, guid: 99818c3a82daf314c90efcd90ca00d91, type: 3}
 --- !u!1 &7679659803386670097
 GameObject:
   m_ObjectHideFlags: 0

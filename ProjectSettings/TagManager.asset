@@ -19,6 +19,9 @@ TagManager:
   - DragonBoss
   - Trap
   - Background
+  - WizzardMagic
+  - Magic2
+  - Magic1
   layers:
   - Default
   - TransparentFX

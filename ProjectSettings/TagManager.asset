@@ -19,6 +19,7 @@ TagManager:
   - DragonBoss
   - Trap
   - Background
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - EnemyLayer
   - ground
   - background
-  - 
+  - NPC
   - 
   - 
   - 
@@ -106,6 +107,9 @@ TagManager:
     locked: 0
   - name: Pet
     uniqueID: 1393253965
+    locked: 0
+  - name: NPC
+    uniqueID: 3701183067
     locked: 0
   m_RenderingLayers:
   - Default

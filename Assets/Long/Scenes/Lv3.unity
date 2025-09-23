@@ -1186,7 +1186,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1059357447
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 4035959289877228764, guid: a9898f969f9f54941a9a3dd6cbcb9acf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2794,7 +2794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3360978749254580519, guid: 3dd34cca31cfee84faa8a8d81e0b9143, type: 3}
       propertyPath: m_SortingLayer
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3360978749254580519, guid: 3dd34cca31cfee84faa8a8d81e0b9143, type: 3}
       propertyPath: m_SortingLayerID
@@ -4932,7 +4932,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -825240795
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -8447,7 +8447,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 607402853
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -32914,7 +32914,9 @@ MonoBehaviour:
   energyThreshold: 30
   energyBar: {fileID: 609739340}
   skillUpgradeUI: {fileID: 1454034558}
-  pointText: {fileID: 755560266}
+  pointText: {fileID: 0}
+  gameOverMenu: {fileID: 0}
+  pauseMenu: {fileID: 0}
 --- !u!4 &2028717406
 Transform:
   m_ObjectHideFlags: 0

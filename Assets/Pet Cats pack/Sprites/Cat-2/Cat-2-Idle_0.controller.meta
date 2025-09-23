@@ -2,7 +2,11 @@ fileFormatVersion: 2
 guid: 5744b72bb1d3ba14c94c4edd3737ac5f
 NativeFormatImporter:
   externalObjects: {}
+<<<<<<< HEAD
   mainObjectFileID: 0
+=======
+  mainObjectFileID: 9100000
+>>>>>>> parent of b458f9248 (Merge remote-tracking branch 'origin/loibackup' into long)
   userData: 
   assetBundleName: 
   assetBundleVariant: 

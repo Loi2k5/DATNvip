@@ -28,11 +28,20 @@ public class Player : MonoBehaviour
     private bool isDashing = false;
 
     [Header("Dash Cooldown")]
-    public float dashCooldown = 3f; // thời gian hồi chiêu
+    public float dashCooldown = 3f;
     private float cooldownTimer = 0f;
-    public TextMeshProUGUI dashCooldownText;   // UI Text hiển thị cooldown
+    public TextMeshProUGUI dashCooldownText;
 
-    public bool canMove = true; // Cho phép di chuyển hay không
+    public bool canMove = true;
+
+    // --- Heal Skill ---
+    [Header("Heal Skill")]
+    [SerializeField] private float healCooldown = 15f;
+    private float healTimer = 0f;
+    [SerializeField] private Image healSkillIcon;          // UI icon kỹ năng
+    [SerializeField] private TextMeshProUGUI healCooldownText; // UI text
+    [SerializeField] private ParticleSystem healVFX;       // Hiệu ứng hồi máu
+    private bool healReady = true;
 
     private void Awake()
     {
@@ -48,13 +57,24 @@ public class Player : MonoBehaviour
 
         if (dashCooldownText != null)
             dashCooldownText.gameObject.SetActive(false);
+
+        if (healCooldownText != null)
+            healCooldownText.text = "Sẵn sàng";
+
+        if (healSkillIcon != null)
+            healSkillIcon.color = Color.white;
+
+        if (healVFX != null)
+            healVFX.gameObject.SetActive(false);
     }
 
     void Update()
     {
-        if (!canMove || isDead) return; // Nếu bị khóa thì bỏ qua mọi input
+        if (!canMove || isDead) return;
         HandleDash();
-        // Tính toán cooldown dash
+        HandleHealSkill();
+
+        // Dash cooldown hiển thị
         if (cooldownTimer > 0)
         {
             cooldownTimer -= Time.deltaTime;
@@ -69,11 +89,11 @@ public class Player : MonoBehaviour
             if (dashCooldownText != null)
                 dashCooldownText.gameObject.SetActive(false);
         }
+
         if (isDead) return;
 
         MovePlayer();
 
-        // Tự động trừ máu nếu đang đứng trong vùng FireWall
         if (isInFireWall)
         {
             fireWallTimer += Time.deltaTime;
@@ -89,6 +109,7 @@ public class Player : MonoBehaviour
             gameManager.PauseGameMenu();
         }
     }
+
     void HandleDash()
     {
         if (Input.GetKeyDown(KeyCode.Space) && !isDashing && cooldownTimer <= 0)
@@ -96,7 +117,7 @@ public class Player : MonoBehaviour
             moveSpeed += dashBoost;
             dashTimer = dashTime;
             isDashing = true;
-            cooldownTimer = dashCooldown; // bắt đầu hồi chiêu
+            cooldownTimer = dashCooldown;
         }
 
         if (isDashing)
@@ -110,14 +131,64 @@ public class Player : MonoBehaviour
         }
     }
 
+    // --- Heal Skill logic ---
+    void HandleHealSkill()
+    {
+        if (!healReady)
+        {
+            healTimer -= Time.deltaTime;
+            if (healCooldownText != null)
+                healCooldownText.text = Mathf.Ceil(healTimer).ToString();
+
+            if (healTimer <= 0)
+            {
+                healReady = true;
+                if (healCooldownText != null) healCooldownText.text = "Sẵn sàng";
+                if (healSkillIcon != null) healSkillIcon.color = Color.white;
+            }
+        }
+
+        // Phím Q để hồi máu
+        if (Input.GetKeyDown(KeyCode.Q) && healReady && !isDead)
+        {
+            ActivateHealSkill();
+        }
+    }
+
+    void ActivateHealSkill()
+    {
+        healReady = false;
+        healTimer = healCooldown;
+
+        // Hồi 50% máu tối đa
+        float healValue = maxHp * 0.5f;
+        currentHp = Mathf.Min(currentHp + healValue, maxHp);
+        UpdateHpBar();
+
+        // Hiệu ứng
+        if (healVFX != null)
+            StartCoroutine(PlayHealVFX());
+
+        // UI chuyển sang cooldown
+        if (healSkillIcon != null) healSkillIcon.color = Color.gray;
+    }
+
+    private System.Collections.IEnumerator PlayHealVFX()
+    {
+        healVFX.gameObject.SetActive(true);
+        healVFX.Play();
+        yield return new WaitForSeconds(2f);
+        healVFX.Stop();
+        healVFX.gameObject.SetActive(false);
+    }
+
     void MovePlayer()
     {
-        if (!canMove) return; // Không cho di chuyển khi bị khóa
+        if (!canMove) return;
         Vector2 playeInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rb.linearVelocity = playeInput.normalized * moveSpeed;
 
         spriteRenderer.flipX = playeInput.x < 0;
-
         animator.SetBool("isRun", playeInput != Vector2.zero);
     }
 
@@ -126,10 +197,7 @@ public class Player : MonoBehaviour
         currentHp -= damage;
         currentHp = Mathf.Max(currentHp, 0);
         UpdateHpBar();
-        if (currentHp <= 0)
-        {
-            Die();
-        }
+        if (currentHp <= 0) Die();
     }
 
     public void Heal(float healValue)
@@ -154,24 +222,10 @@ public class Player : MonoBehaviour
     private void UpdateHpBar()
     {
         if (hpBar != null)
-        {
             hpBar.fillAmount = currentHp / maxHp;
-        }
     }
 
-    public void TangTocChay()
-    {
-        moveSpeed = Mathf.Min(moveSpeed + 2f, maxMoveSpeed);
-    }
-
-    public void HoiMaul()
-    {
-        maxHp = Mathf.Min(maxHp + 300f, 2900f);
-        currentHp = maxHp;
-        UpdateHpBar();
-    }
-
-    // --- Va chạm sát thương ---
+    // --- FireWall enter/exit ---
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isDead) return;
@@ -187,7 +241,7 @@ public class Player : MonoBehaviour
         else if (collision.CompareTag("FireWall"))
         {
             isInFireWall = true;
-            fireWallTimer = 0f; // reset ngay
+            fireWallTimer = 0f;
         }
     }
 
@@ -198,13 +252,12 @@ public class Player : MonoBehaviour
             isInFireWall = false;
         }
     }
-    // Giảm hồi chiêu dash
+
     public void ReduceDashCooldown(float amount)
     {
-        dashCooldown = Mathf.Max(0.5f, dashCooldown - amount); // giới hạn không < 0.5s
+        dashCooldown = Mathf.Max(0.5f, dashCooldown - amount);
     }
 
-    // Tăng máu tối đa
     public void IncreaseMaxHp(float amount)
     {
         maxHp += amount;
